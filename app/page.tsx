@@ -13,22 +13,27 @@ export default function Home() {
   };
 
   return (
-    <header className="mx-56">
+    <header className="mx-10 sm:mx-56">
       <div className="mt-12">
         <h1 className="fs-md fw-700 tc-white">Build Tailwind output Yumma</h1>
         <p className="fs-sm fw-400 tc-white">Transposer will convert Tailwind to Yumma CSS.</p>
       </div>
-      <div className="fd-r g-6 ins mt-12">
+      <div className="fd-c g-6 ins mt-12 sm:fd-r">
         <textarea
-          className="b-1 bc-d-lead-4 bg-black w-full h-100 rad-1 r-none tc-white pt-3 pl-4"
+          className="b-1 bc-d-lead-4 bg-black h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder="Tailwind code"
           value={inp}
           onChange={(e) => setInp(e.target.value)}
         ></textarea>
-        <textarea className="b-1 bc-d-lead-4 bg-black w-full h-100 rad-1 r-none tc-white pt-3 pl-4 c-na" placeholder="Yumma code" value={out} readOnly></textarea>
+        <textarea
+          className="b-1 bc-d-lead-4 bg-black c-na h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
+          placeholder="Yumma code"
+          value={out}
+          readOnly
+        ></textarea>
       </div>
       <div className="ins">
-        <button className="bg-white fw-600 mt-6 px-4 py-2 rad-1 tc-black" onClick={handleTransform}>
+        <button className="bg-white fw-600 h:bg-l-silver-6 mt-6 px-4 py-2 rad-1 tc-black w-100" onClick={handleTransform}>
           Transpose
         </button>
       </div>
