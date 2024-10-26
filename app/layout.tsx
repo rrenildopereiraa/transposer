@@ -4,7 +4,7 @@ import Nav from "./components/nav";
 import Footer from "./components/footer";
 
 export const metadata: Metadata = {
-  title: "Yumma CSS Transposer",
+  title: "Transposer",
   description: "Converts Tailwind to Yumma CSS.",
 };
 
