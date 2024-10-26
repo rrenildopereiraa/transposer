@@ -9,7 +9,7 @@ const Footer = () => {
           </span>
           . The source code is available on{" "}
           <span className="fw-600 td-u">
-            <a href="https://github.com/yumma-lib">GitHub</a>
+            <a href="https://github.com/rrenildopereiraa/transposer">GitHub</a>
           </span>
           .
         </p>

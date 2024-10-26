@@ -1,3 +1,1 @@
-export const effectClasses = {
-  "": ""
-};
+export const effectClasses = new Map<string, string>([["", ""]]);

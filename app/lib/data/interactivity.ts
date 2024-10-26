@@ -1,3 +1,1 @@
-export const interactivityClasses = {
-  "": "",
-};
+export const interactivityClasses = new Map<string, string>([["", ""]]);

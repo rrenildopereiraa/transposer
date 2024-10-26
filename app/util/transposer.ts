@@ -1,15 +1,14 @@
-import { knowledgeBase } from "../lib";
+import { allClasses } from "../lib/index";
 
 export function transposeClasses(inp: string): string {
   let out = inp;
-  
-  for (const classGroup of Object.values(knowledgeBase)) {
-    
-    for (const [tailwindClass, yummaClass] of Object.entries(classGroup)) {
-      const regex = new RegExp(`\\b${tailwindClass}\\d*\\b`, "g");
-      out = out.replace(regex, yummaClass);
+
+  allClasses.forEach((map) => {
+    for (const [tailwindClass, yummaClass] of map.entries()) {
+      const regex = new RegExp(`\\b${tailwindClass}(\\d+)?\\b`, "g");
+      out = out.replace(regex, (_, num) => yummaClass + (num || ""));
     }
-  }
+  });
 
   return out;
 }

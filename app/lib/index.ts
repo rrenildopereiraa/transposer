@@ -10,7 +10,7 @@ import { spacingClasses } from "./data/spacing";
 import { tablesClasses } from "./data/tables";
 import { typographyClasses } from "./data/typography";
 
-export const knowledgeBase = {
+export const allClasses = [
   borderClasses,
   effectClasses,
   filterClasses,
@@ -22,4 +22,4 @@ export const knowledgeBase = {
   spacingClasses,
   tablesClasses,
   typographyClasses,
-};
+];

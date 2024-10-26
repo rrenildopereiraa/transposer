@@ -1,3 +1,1 @@
-export const filterClasses = {
-  "": "",
-};
+export const filterClasses = new Map<string, string>([["", ""]]);

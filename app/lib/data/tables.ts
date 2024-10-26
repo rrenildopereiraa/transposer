@@ -1,3 +1,1 @@
-export const tablesClasses = {
-  "": "",
-};
+export const tablesClasses = new Map<string, string>([["", ""]]);

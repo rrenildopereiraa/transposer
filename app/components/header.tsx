@@ -9,7 +9,7 @@ const Header = () => {
               <a href="https://www.yummacss.com/">Docs</a>
             </li>
             <li className="tc-l-silver-1 h:tc-white fw-400">
-              <a href="https://github.com/yumma-lib/yumma-css-transposer">GitHub</a>
+              <a href="https://github.com/rrenildopereiraa/transposer">GitHub</a>
             </li>
           </div>
         </ul>

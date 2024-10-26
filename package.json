@@ -1,6 +1,6 @@
 {
   "author": "Renildo Pereira",
-  "name": "yumma-css-transposer",
+  "name": "transposer",
   "version": "0.0.1",
   "private": true,
   "scripts": {

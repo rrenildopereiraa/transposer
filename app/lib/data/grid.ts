@@ -1,3 +1,1 @@
-export const gridClasses = {
-  "": "",
-};
+export const gridClasses = new Map<string, string>([["", ""]]);
