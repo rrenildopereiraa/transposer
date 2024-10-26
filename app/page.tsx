@@ -20,16 +20,16 @@ export default function Home() {
       </div>
       <div className="fd-r g-6 ins mt-12">
         <textarea
-          className="b-1 bc-d-lead-4 w-full h-100 rad-1 r-none tc-white"
+          className="b-1 bc-d-lead-4 bg-black w-full h-100 rad-1 r-none tc-white pt-3 pl-4"
           placeholder="Tailwind code"
           value={inp}
           onChange={(e) => setInp(e.target.value)}
         ></textarea>
-        <textarea className="b-1 bc-d-lead-4 w-full h-100 rad-1 r-none tc-white" placeholder="Yumma code" value={out} readOnly></textarea>
+        <textarea className="b-1 bc-d-lead-4 bg-black w-full h-100 rad-1 r-none tc-white pt-3 pl-4 c-na" placeholder="Yumma code" value={out} readOnly></textarea>
       </div>
       <div className="ins">
-        <button className="bg-white fw-600 w-full mt-6 px-4 py-2 rad-1 tc-black" onClick={handleTransform}>
-          Convert
+        <button className="bg-white fw-600 mt-6 px-4 py-2 rad-1 tc-black" onClick={handleTransform}>
+          Transpose
         </button>
       </div>
     </header>
