@@ -9,6 +9,7 @@ import { sizingClasses } from "./data/sizing";
 import { spacingClasses } from "./data/spacing";
 import { tablesClasses } from "./data/tables";
 import { typographyClasses } from "./data/typography";
+import { variantClasses } from "./data/variants";
 
 export const allClasses = [
   borderClasses,
@@ -22,4 +23,5 @@ export const allClasses = [
   spacingClasses,
   tablesClasses,
   typographyClasses,
+  variantClasses
 ];
