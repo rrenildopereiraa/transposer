@@ -1,5 +1,5 @@
 export const borderClasses = new Map<string, string>([
-  // General border
+  // Border Width
   ["border-0", "b-0"],
   ["border", "b-1"],
   ["border-1", "b-1"],
@@ -11,7 +11,7 @@ export const borderClasses = new Map<string, string>([
   ["border-7", "b-7"],
   ["border-8", "b-8"],
 
-  // Border bottom
+  // Border Bottom Width
   ["border-b-0", "bb-0"],
   ["border-b", "bb-1"],
   ["border-b-1", "bb-1"],
@@ -23,7 +23,7 @@ export const borderClasses = new Map<string, string>([
   ["border-b-7", "bb-7"],
   ["border-b-8", "bb-8"],
 
-  // Border left
+  // Border Left Width
   ["border-l-0", "bl-0"],
   ["border-l", "bl-1"],
   ["border-l-1", "bl-1"],
@@ -35,7 +35,7 @@ export const borderClasses = new Map<string, string>([
   ["border-l-7", "bl-7"],
   ["border-l-8", "bl-8"],
 
-  // Border right
+  // Border Right Width
   ["border-r-0", "br-0"],
   ["border-r", "br-1"],
   ["border-r-1", "br-1"],
@@ -47,7 +47,7 @@ export const borderClasses = new Map<string, string>([
   ["border-r-7", "br-7"],
   ["border-r-8", "br-8"],
 
-  // Border top
+  // Border Top Width
   ["border-t-0", "bt-0"],
   ["border-t", "bt-1"],
   ["border-t-1", "bt-1"],
