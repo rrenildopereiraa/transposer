@@ -21,13 +21,13 @@ export default function Home() {
       <div className="fd-c g-6 ins mt-12 sm:fd-r">
         <textarea
           className="b-1 bc-d-lead-4 bg-black h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
-          placeholder="Tailwind code"
+          placeholder="Tailwind CSS"
           value={inp}
           onChange={(e) => setInp(e.target.value)}
         ></textarea>
         <textarea
           className="b-1 bc-d-lead-4 bg-black c-na h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
-          placeholder="Yumma code"
+          placeholder="Yumma CSS"
           value={out}
           readOnly
         ></textarea>
