@@ -180,5 +180,73 @@ export const flexboxGridClasses = new Map<string, string>([
   ["auto-cols-max", "gac-max"],
 
   // Grid Auto Rows
-  
+  ["auto-rows-auto", "gar-auto"],
+  ["auto-rows-min", "gar-min"],
+  ["auto-rows-max", "gar-max"],
+
+  // Gap
+  ["gap-0", "g-0"],
+  ["gap-1", "g-1"],
+  ["gap-2", "g-2"],
+  ["gap-3", "g-3"],
+  ["gap-4", "g-4"],
+  ["gap-5", "g-5"],
+  ["gap-6", "g-6"],
+  ["gap-7", "g-7"],
+  ["gap-8", "g-8"],
+  ["gap-9", "g-9"],
+  ["gap-10", "g-10"],
+  ["gap-11", "g-11"],
+  ["gap-12", "g-12"],
+  ["gap-14", "g-14"],
+  ["gap-16", "g-16"],
+
+  // Justify Content
+  ["justify-normal", "jc-n"],
+  ["justify-start", "jc-fs"],
+  ["justify-end", "jc-fe"],
+  ["justify-center", "jc-c"],
+  ["justify-between", "jc-sb"],
+  ["justify-around", "jc-sa"],
+  ["justify-evenly", "jc-se"],
+  ["justify-stretch", "jc-s"],
+
+  // Justify Items
+  ["justify-items-start", "ji-s"],
+  ["justify-items-end", "ji-e"],
+  ["justify-items-center", "ji-c"],
+  ["justify-items-stretch", "ji-st"],
+
+  // Justify Self
+  ["justify-self-auto", "js-auto"],
+  ["justify-self-start", "js-s"],
+  ["justify-self-end", "js-e"],
+  ["justify-self-center", "js-c"],
+  ["justify-self-stretch", "js-st"],
+
+  // Align Content
+  ["content-normal", "ac-n"],
+  ["content-center", "ac-c"],
+  ["content-start", "ac-fs"],
+  ["content-end", "ac-fe"],
+  ["content-between", "ac-sb"],
+  ["content-around", "ac-sa"],
+  ["content-evenly", "ac-se"],
+  ["content-baseline", "ac-b"],
+  ["content-stretch", "ac-s"],
+
+  // Align Items
+  ["items-start", "ai-fs"],
+  ["items-end", "ai-fe"],
+  ["items-center", "ai-c"],
+  ["items-baseline", "ai-b"],
+  ["items-stretch", "ai-s"],
+
+  // Align Self
+  ["self-auto", "as-auto"],
+  ["self-start", "as-fs"],
+  ["self-end", "as-fe"],
+  ["self-center", "as-c"],
+  ["self-stretch", "as-s"],
+  ["self-baseline", "as-b"],
 ]);
