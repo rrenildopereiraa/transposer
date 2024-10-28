@@ -1,4 +1,16 @@
 export const borderClasses = new Map<string, string>([
+  // Border Radius
+  ["rounded-none", "rad-0"],
+  ["rounded", "rad-1"],
+  ["rounded-lg", "rad-2"],
+  ["rounded-xl", "rad-3"],
+  ["rounded-2xl", "rad-4"],
+
+  // Border Style
+  ["border-none", "b-none"],
+  ["border-dashed", "b-d"],
+  ["border-solid", "b-s"],
+
   // Border Width
   ["border-0", "b-0"],
   ["border", "b-1"],

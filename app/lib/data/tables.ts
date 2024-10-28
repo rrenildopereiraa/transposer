@@ -1,1 +1,1 @@
-export const tablesClasses = new Map<string, string>([["", ""]]);
+export const tableClasses = new Map<string, string>([["", ""]]);

@@ -1,12 +1,14 @@
 import { borderClasses } from "./data/border";
 import { effectClasses } from "./data/effects";
 import { filterClasses } from "./data/filters";
-import { flexboxGridClasses } from "./data/flexbox-grid";
+import { flexboxClasses } from "./data/flexbox";
+import { gridClasses } from "./data/grid";
 import { interactivityClasses } from "./data/interactivity";
 import { layoutClasses } from "./data/layout";
+import { outlineClasses } from "./data/outline";
 import { sizingClasses } from "./data/sizing";
 import { spacingClasses } from "./data/spacing";
-import { tablesClasses } from "./data/tables";
+import { tableClasses } from "./data/tables";
 import { typographyClasses } from "./data/typography";
 import { variantClasses } from "./data/variants";
 
@@ -14,12 +16,14 @@ export const allClasses = [
   borderClasses,
   effectClasses,
   filterClasses,
-  flexboxGridClasses,
+  flexboxClasses,
+  gridClasses,
   interactivityClasses,
   layoutClasses,
+  outlineClasses,
   sizingClasses,
   spacingClasses,
-  tablesClasses,
+  tableClasses,
   typographyClasses,
   variantClasses,
 ];
