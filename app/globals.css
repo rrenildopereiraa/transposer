@@ -1,9 +1,9 @@
 /* Minified Version */
 @import "yummacss/dist/yumma.min.css";
 
-.bg {
+body {
     background-color: #000000;
-    opacity: 0.9;
     background-image: radial-gradient(#26262f 0.65px, #000000 0.65px);
     background-size: 13px 13px;
+    opacity: 0.9;
 }
