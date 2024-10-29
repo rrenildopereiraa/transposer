@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 import "./globals.css";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className="bg-black">
         <Nav />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>
