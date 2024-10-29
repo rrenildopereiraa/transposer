@@ -3,7 +3,9 @@ import { allClasses } from "../lib/index";
 export function transposeClasses(inp: string): string {
   let out = inp;
 
-  const sortedClasses = [...allClasses].flatMap((map) => [...map.entries()]).sort(([a], [b]) => b.length - a.length);
+  const sortedClasses = [...allClasses]
+    .flatMap((map) => [...map.entries()])
+    .sort(([a], [b]) => b.length - a.length);
 
   sortedClasses.forEach(([tailwindClass, yummaClass]) => {
     const regex = new RegExp(`\\b${tailwindClass}(\\d+)?\\b`, "g");
