@@ -28,7 +28,6 @@ export const layoutClasses = new Map<string, string>([
   ["box-content", "bs-cb"],
 
   // Display
-  ["float-0", "flo-0"],
   ["block", "d-b"],
   ["inline-block", "d-ib"],
   ["inline", "d-i"],
