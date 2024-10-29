@@ -43,7 +43,7 @@ export default function Home() {
       <div className="fd-c g-6 ins mt-12 sm:fd-r">
         {!isConverted && (
           <textarea
-            className=""
+            className="b-1 bc-d-lead-4 bg-black c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
             placeholder="Tailwind CSS"
             value={inp}
             onChange={(e) => setInp(e.target.value)}></textarea>
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
       <div className="ins">
         <button
-          className=""
+          className="bg-white fw-600 h:bg-l-silver-6 mt-6 px-4 py-2 rad-1 tc-black w-100"
           onClick={isConverted ? handleCopy : handleTransform}>
           {isConverted ? "Copy" : "Transpose"}
         </button>
