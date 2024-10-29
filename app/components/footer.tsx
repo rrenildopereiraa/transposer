@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <>
@@ -5,11 +7,15 @@ const Footer = () => {
         <p className="tc-l-gray-4">
           Built by{" "}
           <span className="fw-600 td-u">
-            <a href="https://github.com/rrenildopereiraa">Renildo Pereira</a>
+            <Link href={"https://github.com/rrenildopereiraa"}>
+              Renildo Pereira
+            </Link>
           </span>
           . The source code is available on{" "}
           <span className="fw-600 td-u">
-            <a href="https://github.com/rrenildopereiraa/transposer">GitHub</a>
+            <Link href={"https://github.com/rrenildopereiraa/transposer"}>
+              GitHub
+            </Link>
           </span>
           .
         </p>
