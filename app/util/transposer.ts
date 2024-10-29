@@ -3,8 +3,8 @@ import { allClasses } from "../lib/index";
 export function transposeClasses(inp: string): string {
   let out = inp;
 
-  const sortedClasses = [...allClasses]
-    .flatMap((map) => [...map.entries()])
+  const sortedClasses = allClasses
+    .flatMap(({ classes }) => [...classes.entries()])
     .sort(([a], [b]) => b.length - a.length);
 
   sortedClasses.forEach(([tailwindClass, yummaClass]) => {
