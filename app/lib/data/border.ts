@@ -203,4 +203,8 @@ export const borderClasses = new Map<string, string>([
   ["border-gray-800", "bc-d-gray-4"],
   ["border-gray-900", "bc-d-gray-5"],
   ["border-gray-950", "bc-d-gray-6"],
+
+  ["border-black", "bc-black"],
+  ["border-transparent", "bc-transparent"],
+  ["border-white", "bc-white"],
 ]);

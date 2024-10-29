@@ -138,6 +138,10 @@ export const outlineClasses = new Map<string, string>([
   ["outline-gray-900", "oc-d-gray-5"],
   ["outline-gray-950", "oc-d-gray-6"],
 
+  ["outline-black", "oc-black"],
+  ["outline-transparent", "oc-transparent"],
+  ["outline-white", "oc-white"],
+
   // Outline Style
   ["outline-none", "os-none"],
   ["outline", "os-s"],

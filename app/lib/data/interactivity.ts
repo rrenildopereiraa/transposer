@@ -296,6 +296,10 @@ export const interactivityClasses = new Map<string, string>([
   ["caret-gray-900", "cc-d-gray-5"],
   ["caret-gray-950", "cc-d-gray-6"],
 
+  ["caret-black", "cc-black"],
+  ["caret-transparent", "cc-transparent"],
+  ["caret-white", "cc-white"],
+
   // Pointer Events
   ["pointer-events-none", "pe-none"],
   ["pointer-events-auto", "pe-auto"],

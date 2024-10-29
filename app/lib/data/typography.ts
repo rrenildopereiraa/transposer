@@ -185,6 +185,10 @@ export const typographyClasses = new Map<string, string>([
   ["text-gray-900", "tc-d-gray-5"],
   ["text-gray-950", "tc-d-gray-6"],
 
+  ["text-black", "tc-black"],
+  ["text-transparent", "tc-transparent"],
+  ["text-white", "tc-white"],
+
   // Text Decoration
   ["underline", "td-u"],
   ["no-underline", "td-none"],
@@ -321,6 +325,10 @@ export const typographyClasses = new Map<string, string>([
   ["decoration-gray-800", "tdc-d-gray-4"],
   ["decoration-gray-900", "tdc-d-gray-5"],
   ["decoration-gray-950", "tdc-d-gray-6"],
+
+  ["decoration-black", "tdc-black"],
+  ["decoration-transparent", "tdc-transparent"],
+  ["decoration-white", "tdc-white"],
 
   // Text Decoration Style
   ["decoration-solid", "tds-s"],
