@@ -9,12 +9,7 @@ const Nav = () => {
             </li>
             <li className="fw-400 h:tc-white tc-l-silver-1">
               <a href="https://github.com/rrenildopereiraa/transposer/wiki">
-                Wiki
-              </a>
-            </li>
-            <li className="fw-400 h:tc-white tc-l-silver-1">
-              <a href="https://github.com/rrenildopereiraa/transposer/issues">
-                Issues
+                Docs
               </a>
             </li>
             <li className="fw-400 h:tc-white tc-l-silver-1">
