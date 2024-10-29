@@ -124,6 +124,23 @@ export const gridClasses = new Map<string, string>([
   ["auto-rows-min", "gar-min"],
   ["auto-rows-max", "gar-max"],
 
+  // Column Gap
+  ["gap-x-0", "cg-0"],
+  ["gap-x-1", "cg-1"],
+  ["gap-x-2", "cg-2"],
+  ["gap-x-3", "cg-3"],
+  ["gap-x-4", "cg-4"],
+  ["gap-x-5", "cg-5"],
+  ["gap-x-6", "cg-6"],
+  ["gap-x-7", "cg-7"],
+  ["gap-x-8", "cg-8"],
+  ["gap-x-9", "cg-9"],
+  ["gap-x-10", "cg-10"],
+  ["gap-x-11", "cg-11"],
+  ["gap-x-12", "cg-12"],
+  ["gap-x-14", "cg-14"],
+  ["gap-x-16", "cg-16"],
+
   // Gap
   ["gap-0", "g-0"],
   ["gap-1", "g-1"],
@@ -140,4 +157,21 @@ export const gridClasses = new Map<string, string>([
   ["gap-12", "g-12"],
   ["gap-14", "g-14"],
   ["gap-16", "g-16"],
+
+  // Row Gap
+  ["gap-y-0", "rg-0"],
+  ["gap-y-1", "rg-1"],
+  ["gap-y-2", "rg-2"],
+  ["gap-y-3", "rg-3"],
+  ["gap-y-4", "rg-4"],
+  ["gap-y-5", "rg-5"],
+  ["gap-y-6", "rg-6"],
+  ["gap-y-7", "rg-7"],
+  ["gap-y-8", "rg-8"],
+  ["gap-y-9", "rg-9"],
+  ["gap-y-10", "rg-10"],
+  ["gap-y-11", "rg-11"],
+  ["gap-y-12", "rg-12"],
+  ["gap-y-14", "rg-14"],
+  ["gap-y-16", "rg-16"],
 ]);
