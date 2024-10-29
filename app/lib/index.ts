@@ -1,3 +1,4 @@
+import { backgroundClasses } from "./data/background";
 import { borderClasses } from "./data/border";
 import { effectClasses } from "./data/effects";
 import { filterClasses } from "./data/filters";
@@ -13,6 +14,7 @@ import { typographyClasses } from "./data/typography";
 import { variantClasses } from "./data/variants";
 
 export const allClasses = [
+  backgroundClasses,
   borderClasses,
   effectClasses,
   filterClasses,
