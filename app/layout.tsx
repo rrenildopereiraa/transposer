@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { Toaster } from "sonner";
 import "./globals.css";
-import Nav from "./components/nav";
+import { Toaster } from "sonner";
 import Footer from "./components/footer";
+import Nav from "./components/nav";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Transposer",
