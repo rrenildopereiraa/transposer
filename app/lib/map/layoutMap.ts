@@ -21,7 +21,6 @@ export const layoutClasses = new Map<string, string>([
   ["columns-11", "cols-11"],
   ["columns-12", "cols-12"],
   ["columns-auto", "cols-auto"],
-  ["hidden", "d-0"],
 
   // Box Sizing
   ["box-border", "bs-bb"],
@@ -29,16 +28,16 @@ export const layoutClasses = new Map<string, string>([
 
   // Display
   ["block", "d-b"],
-  ["inline-block", "d-ib"],
-  ["inline", "d-i"],
   ["flex", "d-f"],
-  ["object-0", "of-0"],
-  ["inline-flex", "d-if"],
-  ["table", "d-t"],
-  ["inline-table", "d-it"],
   ["flow-root", "d-fr"],
   ["grid", "d-g"],
+  ["hidden", "d-none"],
+  ["inline-block", "d-ib"],
+  ["inline-flex", "d-if"],
   ["inline-grid", "d-ig"],
+  ["inline-table", "d-it"],
+  ["inline", "d-i"],
+  ["table", "d-t"],
 
   // Float
   ["float-start", "flo-is"],
@@ -104,6 +103,7 @@ export const layoutClasses = new Map<string, string>([
   ["bottom-14", "dir-l-14"],
   ["bottom-15", "dir-l-15"],
   ["bottom-16", "dir-l-16"],
+  
   ["inset-0", "dir-i-0"],
   ["inset-1", "dir-i-1"],
   ["inset-2", "dir-i-2"],
@@ -121,6 +121,7 @@ export const layoutClasses = new Map<string, string>([
   ["inset-14", "dir-i-14"],
   ["inset-15", "dir-i-15"],
   ["inset-16", "dir-i-16"],
+
   ["left-0", "dir-l-0"],
   ["left-1", "dir-l-1"],
   ["left-2", "dir-l-2"],
@@ -138,6 +139,7 @@ export const layoutClasses = new Map<string, string>([
   ["left-14", "dir-l-14"],
   ["left-15", "dir-l-15"],
   ["left-16", "dir-l-16"],
+
   ["right-0", "dir-r-0"],
   ["right-1", "dir-r-1"],
   ["right-2", "dir-r-2"],
@@ -155,6 +157,7 @@ export const layoutClasses = new Map<string, string>([
   ["right-14", "dir-r-14"],
   ["right-15", "dir-r-15"],
   ["right-16", "dir-r-16"],
+
   ["top-0", "dir-t-0"],
   ["top-1", "dir-t-1"],
   ["top-2", "dir-t-2"],
