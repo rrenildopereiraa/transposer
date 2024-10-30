@@ -5,7 +5,7 @@ export default function Docs() {
     <main className="mx-10 sm:mx-56 mt-12">
       <h1 className="fs-md fw-700 tc-white">Documentation</h1>
       <p className="fs-sm fw-400 tc-white">
-        Here are the mappings from Tailwind CSS to Yumma CSS.
+        See how it works under the hood with our mappings.
       </p>
 
       {allClasses.map(({ title, classes }, i) => (
