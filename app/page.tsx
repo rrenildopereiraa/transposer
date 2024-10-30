@@ -33,21 +33,21 @@ export default function Home() {
   };
 
   return (
-    <header className="mx-10 sm:mx-56">
+    <header className="mx-10 min-h-1/1 lg:mx-56">
       <div className="mt-12">
         <h1 className="fs-md fw-700 tc-white">Build Tailwind output Yumma</h1>
         <p className="fs-sm fw-400 tc-white">
           Transposer will convert Tailwind to Yumma CSS.
         </p>
       </div>
-      <div className="fd-c g-6 ins mt-12 sm:fd-r">
+      <div className="fd-c g-6 ins mt-12 md:fd-r">
         <textarea
-          className="b-1 bc-d-lead-4 bg-black c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
+          className="b-1 bc-d-lead-4 bg-d-lead-6 c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder="Tailwind CSS"
           value={inp}
           onChange={(e) => setInp(e.target.value)}></textarea>
         <textarea
-          className="b-1 bc-d-lead-4 bg-black c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
+          className="b-1 bc-d-lead-4 bg-d-lead-6 c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder="Yumma CSS"
           value={out}
           readOnly></textarea>
