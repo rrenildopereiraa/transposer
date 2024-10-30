@@ -1,6 +1,5 @@
 export const sizingClasses = new Map<string, string>([
   // Width
-  ["w-auto", "w-fc"],
   ["w-1/2", "w-half"],
   ["w-2/4", "w-half"],
   ["w-3/6", "w-half"],
