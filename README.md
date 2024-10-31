@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://transposer.vercel.app/" target="_blank" rel="noopener noreferrer">
-    <img alt="Transposer" src="https://transposer.vercel.app/assets/icon.png" width="220" style="max-width: 100%;">
+    <img alt="Transposer" src="https://transposer.vercel.app/assets/icon.png" width="80" style="max-width: 100%;">
   </a>
 </div>
 
