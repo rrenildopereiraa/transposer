@@ -1,9 +1,13 @@
-<h3 align="center">Transposer</h3>
+<div align="center">
+  <a href="https://transposer.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img alt="Transposer" src="https://transposer.vercel.app/assets/icon.png" width="220" style="max-width: 100%;">
+  </a>
+</div>
 
 <p align="center">
   Build Tailwind output Yumma.
   <br>
-  <a href="https://yummacss.com"><strong>Launch application ↗</strong></a>
+  <a href="https://transposer.vercel.app/"><strong>Launch application ↗</strong></a>
 
 ## Get started
 
