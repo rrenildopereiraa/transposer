@@ -2,6 +2,7 @@
   <a href="https://transposer.vercel.app/" target="_blank" rel="noopener noreferrer">
     <img alt="Transposer" src="https://transposer.vercel.app/assets/icon.png" width="80" style="max-width: 100%;">
   </a>
+  <h3>Transposer</h3>
 </div>
 
 <p align="center">
