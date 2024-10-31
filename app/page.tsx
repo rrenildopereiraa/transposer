@@ -28,7 +28,9 @@ export default function Home() {
         toast.success("Your code has been copied!");
       })
       .catch(() => {
-        toast.error("Something went wrong! Please contact the author");
+        toast.error(
+          "Sorry about that—there was a hiccup. If this keeps happening, please create a GitHub issue."
+        );
       });
   };
 
