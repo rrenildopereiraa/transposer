@@ -29,7 +29,7 @@ export default function Home() {
       })
       .catch(() => {
         toast.error(
-          "Sorry about that — there was a hiccup. If this keeps happening, please create a GitHub issue."
+          "There was a hiccup. If this keeps happening, please create a GitHub issue."
         );
       });
   };
