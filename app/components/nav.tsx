@@ -26,8 +26,8 @@ const Nav = () => {
             <Link href="/docs">Docs</Link>
           </li>
           <li className="fw-400 h:tc-white tc-l-silver-1">
-            <Link href="https://github.com/rrenildopereiraa/transposer">
-              GitHub
+            <Link href="https://play.yummacss.com">
+              Playground
             </Link>
           </li>
         </div>
