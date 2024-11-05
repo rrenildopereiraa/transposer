@@ -9,10 +9,12 @@ export const sizingClasses = new Map<string, string>([
   ["w-fit", "w-fc"],
 
   // Min-Width
+  ["min-w-sm", "min-w-96"],
   ["min-w-full", "min-w-full"],
   ["min-w-fit", "min-w-fc"],
 
   // Max-Width
+  ["max-w-sm", "max-w-96"],
   ["max-w-full", "max-w-full"],
   ["max-w-fit", "max-w-fc"],
 
@@ -25,10 +27,12 @@ export const sizingClasses = new Map<string, string>([
   ["h-fit", "h-fc"],
 
   // Min-Height
+  ["min-h-sm", "min-h-96"],
   ["min-h-dvh", "min-h-1/1"],
   ["min-h-fit", "min-h-fc"],
 
   // Max-Height
+  ["max-h-sm", "max-h-96"],
   ["max-h-dvh", "max-h-1/1"],
   ["max-h-fit", "max-h-fc"],
   ["max-h-1/2", "max-h-1/2"],
