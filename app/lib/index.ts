@@ -1,17 +1,17 @@
-import { backgroundClasses } from "./map/backgroundMap";
-import { borderClasses } from "./map/borderMap";
-import { effectClasses } from "./map/effectMap";
-import { filterClasses } from "./map/filterMap";
-import { flexboxClasses } from "./map/flexboxMap";
-import { gridClasses } from "./map/gridMap";
-import { interactivityClasses } from "./map/interactivityMap";
-import { layoutClasses } from "./map/layoutMap";
-import { outlineClasses } from "./map/outlineMap";
-import { sizingClasses } from "./map/sizingMap";
-import { spacingClasses } from "./map/spacingMap";
-import { tableClasses } from "./map/tableMap";
-import { typographyClasses } from "./map/typographyMap";
-import { variantClasses } from "./map/variantMap";
+import { backgroundClasses } from "./mappings/backgroundMap";
+import { borderClasses } from "./mappings/borderMap";
+import { effectClasses } from "./mappings/effectMap";
+import { filterClasses } from "./mappings/filterMap";
+import { flexboxClasses } from "./mappings/flexboxMap";
+import { gridClasses } from "./mappings/gridMap";
+import { interactivityClasses } from "./mappings/interactivityMap";
+import { layoutClasses } from "./mappings/layoutMap";
+import { outlineClasses } from "./mappings/outlineMap";
+import { sizingClasses } from "./mappings/sizingMap";
+import { spacingClasses } from "./mappings/spacingMap";
+import { tableClasses } from "./mappings/tableMap";
+import { typographyClasses } from "./mappings/typographyMap";
+import { variantClasses } from "./mappings/variantMap";
 
 export const allClasses = [
   { title: "Background", classes: backgroundClasses },
