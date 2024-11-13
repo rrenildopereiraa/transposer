@@ -47,11 +47,13 @@ export default function Home() {
           className="b-1 bc-d-lead-4 bg-d-lead-6 c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder="Tailwind CSS"
           value={inp}
+          spellCheck={false}
           onChange={(e) => setInp(e.target.value)}></textarea>
         <textarea
           className="b-1 bc-d-lead-4 bg-d-lead-6 c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder="Yumma CSS"
           value={out}
+          spellCheck={false}
           readOnly></textarea>
       </div>
       <div className="ins">
