@@ -39,7 +39,7 @@ export default function Home() {
       <div className="mt-12">
         <h1 className="fs-md fw-700 tc-white">Build Tailwind output Yumma</h1>
         <p className="fs-sm fw-400 tc-white">
-          Transposer will convert Tailwind to Yumma CSS.
+          Transposer will convert Tailwind to Yumma CSS
         </p>
       </div>
       <div className="fd-c g-6 ins mt-12 md:fd-r">
