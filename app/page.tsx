@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Transpose from "./components/transpose";
+import Transposer from "./components/transposer";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
           Transposer will convert Tailwind to Yumma CSS
         </p>
       </div>
-      <Transpose />
+      <Transposer />
     </header>
   );
 }

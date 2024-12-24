@@ -1,10 +1,10 @@
 "use client";
 
 import { toast } from "sonner";
-import { transposeClasses } from "../util/transposer";
+import { transposeClasses } from "../util/convertor";
 import React, { useState } from "react";
 
-function Transpose() {
+function Transposer() {
   const [inp, setInp] = useState("");
   const [out, setOut] = useState("");
   const [isConverted, setIsConverted] = useState(false);
@@ -61,4 +61,4 @@ function Transpose() {
   );
 }
 
-export default Transpose;
+export default Transposer;
