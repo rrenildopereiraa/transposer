@@ -9,21 +9,36 @@ export default function Docs() {
       </p>
 
       {allClasses.map(({ title, classes }, i) => (
-        <section
-          key={i}
-          className="b-1 bc-d-lead-4 bg-black mt-8 p-4 pt-3 rad-1">
-          <h2 className="fs-md fw-600 mb-4 tc-white">{title}</h2>
-          <ul className="ff-m lst-d pl-5 s-y-3">
-            {Array.from(classes.entries()).map(
-              ([tailwindClass, yummaClass], i) => (
-                <li key={i} className="">
-                  <strong className="tc-white">{tailwindClass}</strong>{" "}
-                  <span className="tc-white">→</span>{" "}
-                  <span className="tc-l-silver-2">{yummaClass}</span>
-                </li>
-              )
-            )}
-          </ul>
+        <section key={i} className="b-1 bc-d-lead-4 bg-black mt-6 pt-3">
+          <h2 className="fs-sm ta-c fw-600 mb-4 tc-white">{title} utilities</h2>
+          <div className="ovf-h bt-1 bc-d-lead-4">
+            <table className="w-full bc-c ta-l fs-b tc-l-silver-6">
+              <thead className="bg-black">
+                <tr>
+                  <th scope="col" className="px-6 py-4 fw-500 tc-white">
+                    Category
+                  </th>
+                  <th scope="col" className="px-6 py-4 fw-500 tc-white">
+                    Tailwind utility
+                  </th>
+                  <th scope="col" className="px-6 py-4 fw-500 tc-white">
+                    Yumma utility
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bt-1 bc-d-lead-4">
+                {Array.from(classes.entries()).map(
+                  ([tailwindClass, yummaClass], j) => (
+                    <tr key={j}>
+                      <th className="px-6 py-4 fw-500 tc-white">{title}</th>
+                      <td className="px-6 py-4 ff-m">{tailwindClass}</td>
+                      <td className="px-6 py-4 ff-m">{yummaClass}</td>
+                    </tr>
+                  )
+                )}
+              </tbody>
+            </table>
+          </div>
         </section>
       ))}
     </main>

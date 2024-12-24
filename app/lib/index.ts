@@ -11,7 +11,7 @@ import { sizingClasses } from "./mappings/sizingMap";
 import { spacingClasses } from "./mappings/spacingMap";
 import { tableClasses } from "./mappings/tableMap";
 import { typographyClasses } from "./mappings/typographyMap";
-import { variantClasses } from "./mappings/variantMap";
+import { modifierClasses } from "./mappings/modifierMap";
 
 export const allClasses = [
   { title: "Background", classes: backgroundClasses },
@@ -27,5 +27,5 @@ export const allClasses = [
   { title: "Spacing", classes: spacingClasses },
   { title: "Tables", classes: tableClasses },
   { title: "Typography", classes: typographyClasses },
-  { title: "Variants", classes: variantClasses },
+  { title: "Modifiers", classes: modifierClasses },
 ];
