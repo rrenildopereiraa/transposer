@@ -1,6 +1,5 @@
 import { toast } from "sonner";
 import { transposeClasses } from "../util/convertor";
-import Button from "./button";
 import React, { useState } from "react";
 
 function Transposer() {
@@ -50,11 +49,9 @@ function Transposer() {
           readOnly></textarea>
       </div>
       <div className="ai-c d-f jc-c s-x-6">
-        <Button
-          onClick={isConverted ? handleCopy : handleTransform}
-          label={isConverted ? "Copy" : "Transpose"}
-          icon={isConverted ? "copy" : "convert"}
-        />
+        <button onClick={isConverted ? handleCopy : handleTransform}>
+          {isConverted ? "Copy" : "Transpose"}
+        </button>
       </div>
     </div>
   );
