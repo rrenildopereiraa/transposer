@@ -48,8 +48,10 @@ function Transposer() {
           spellCheck={false}
           readOnly></textarea>
       </div>
-      <div className="ai-c b-1 bc-d-lead-4 bg-d-lead-6 tc-silver d-f jc-c px-5 py-2 my-4 rad-1 s-x-6">
-        <button onClick={isConverted ? handleCopy : handleTransform}>
+      <div className="ai-c d-f jc-c">
+        <button
+          className="b-1 bc-d-lead-4 bg-d-lead-6 tc-silver  px-5 py-2 my-4 rad-1 s-x-6"
+          onClick={isConverted ? handleCopy : handleTransform}>
           {isConverted ? "Copy" : "Transpose"}
         </button>
       </div>
