@@ -11,7 +11,7 @@ const Footer = () => {
               Renildo Pereira
             </Link>
           </span>
-          . The source code is available on{" "}
+          . Project available on{" "}
           <span className="fw-600 td-u">
             <Link href={"https://github.com/rrenildopereiraa/transposer"}>
               GitHub
