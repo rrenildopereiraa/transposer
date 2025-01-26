@@ -1,5 +1,5 @@
-export const sizingClasses = new Map<string, string>([
-  // Width
+export const sizingUtils = new Map<string, string>([
+  // width
   ["w-1/2", "w-half"],
   ["w-2/4", "w-half"],
   ["w-3/6", "w-half"],
@@ -8,17 +8,17 @@ export const sizingClasses = new Map<string, string>([
   ["w-dvw", "w-1/1"],
   ["w-fit", "w-fc"],
 
-  // Min-Width
+  // min-width
   ["min-w-sm", "min-w-96"],
   ["min-w-full", "min-w-full"],
   ["min-w-fit", "min-w-fc"],
 
-  // Max-Width
+  // max-width
   ["max-w-sm", "max-w-96"],
   ["max-w-full", "max-w-full"],
   ["max-w-fit", "max-w-fc"],
 
-  // Height
+  // height
   ["h-1/2", "h-half"],
   ["h-2/4", "h-half"],
   ["h-3/6", "h-half"],
@@ -26,18 +26,18 @@ export const sizingClasses = new Map<string, string>([
   ["h-dvh", "h-1/1"],
   ["h-fit", "h-fc"],
 
-  // Min-Height
+  // min-height
   ["min-h-sm", "min-h-96"],
   ["min-h-dvh", "min-h-1/1"],
   ["min-h-fit", "min-h-fc"],
 
-  // Max-Height
+  // max-height
   ["max-h-sm", "max-h-96"],
   ["max-h-dvh", "max-h-1/1"],
   ["max-h-fit", "max-h-fc"],
   ["max-h-1/2", "max-h-1/2"],
 
-  // Size
+  // size
   ["size-0", "dim-0"],
   ["size-1", "dim-1"],
   ["size-2", "dim-2"],

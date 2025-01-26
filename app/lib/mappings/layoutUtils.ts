@@ -1,13 +1,13 @@
-export const layoutClasses = new Map<string, string>([
-  // Aspect Ratio
+export const layoutUtils = new Map<string, string>([
+  // aspect-ratio
   ["aspect-auto", "ar-auto"],
   ["aspect-square", "ar-s"],
   ["aspect-video", "ar-l"],
 
-  // Container
+  // container
   ["container", "cnt"],
 
-  // Columns
+  // columns
   ["columns-1", "cols-1"],
   ["columns-2", "cols-2"],
   ["columns-3", "cols-3"],
@@ -22,11 +22,11 @@ export const layoutClasses = new Map<string, string>([
   ["columns-12", "cols-12"],
   ["columns-auto", "cols-auto"],
 
-  // Box Sizing
+  // box-sizing
   ["box-border", "bs-bb"],
   ["box-content", "bs-cb"],
 
-  // Display
+  // display
   ["block", "d-b"],
   ["flex", "d-f"],
   ["flow-root", "d-fr"],
@@ -39,18 +39,18 @@ export const layoutClasses = new Map<string, string>([
   ["inline", "d-i"],
   ["table", "d-t"],
 
-  // Float
+  // float
   ["float-start", "flo-is"],
   ["float-end", "flo-ie"],
   ["float-right", "flo-r"],
   ["float-left", "flo-l"],
 
-  // Object Fit
+  // object-fit
   ["object-cover", "of-c"],
   ["object-fill", "of-f"],
   ["object-scale-down", "of-sd"],
 
-  // Position Position
+  // position-position
   ["object-bottom", "op-b"],
   ["object-center", "op-c"],
   ["object-left", "op-l"],
@@ -61,7 +61,7 @@ export const layoutClasses = new Map<string, string>([
   ["object-right-top", "op-rt"],
   ["object-top", "op-t"],
 
-  // Overflow
+  // overflow
   ["overflow-auto", "ovf-auto"],
   ["overflow-hidden", "ovf-h"],
   ["overflow-clip", "ovf-c"],
@@ -78,14 +78,14 @@ export const layoutClasses = new Map<string, string>([
   ["overflow-x-scroll", "ovf-x-s"],
   ["overflow-y-scroll", "ovf-y-s"],
 
-  // Position
+  // position
   ["static", "p-s"],
   ["fixed", "p-f"],
   ["absolute", "p-a"],
   ["relative", "p-r"],
   ["sticky", "p-st"],
 
-  // Top / Right / Bottom / Left
+  // top-right-bottom-left
   ["bottom-0", "dir-l-0"],
   ["bottom-1", "dir-l-1"],
   ["bottom-2", "dir-l-2"],
@@ -103,7 +103,7 @@ export const layoutClasses = new Map<string, string>([
   ["bottom-14", "dir-l-14"],
   ["bottom-15", "dir-l-15"],
   ["bottom-16", "dir-l-16"],
-  
+
   ["inset-0", "dir-i-0"],
   ["inset-1", "dir-i-1"],
   ["inset-2", "dir-i-2"],
@@ -176,7 +176,7 @@ export const layoutClasses = new Map<string, string>([
   ["top-15", "dir-t-15"],
   ["top-16", "dir-t-16"],
 
-  // Z-Index
+  // z-index
   ["z-0", "zi-0"],
   ["z-10", "zi-10"],
   ["z-20", "zi-20"],

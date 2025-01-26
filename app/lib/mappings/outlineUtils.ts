@@ -1,11 +1,11 @@
-export const outlineClasses = new Map<string, string>([
-  // Outline Width
+export const outlineUtils = new Map<string, string>([
+  // outline-width
   ["outline-0", "ow-0"],
   ["outline-1", "ow-1"],
   ["outline-2", "ow-2"],
   ["outline-4", "ow-4"],
 
-  // Outline Color
+  // outline-color
   ["outline-red-50", "oc-l-red-6"],
   ["outline-red-100", "oc-l-red-5"],
   ["outline-red-200", "oc-l-red-4"],
@@ -142,12 +142,12 @@ export const outlineClasses = new Map<string, string>([
   ["outline-transparent", "oc-transparent"],
   ["outline-white", "oc-white"],
 
-  // Outline Style
+  // outline-style
   ["outline-none", "os-none"],
   ["outline", "os-s"],
   ["outline-dashed", "os-d"],
 
-  // Outline Offset
+  // outline-offset
   ["outline-offset-0", "oo-0"],
   ["outline-offset-1", "oo-1"],
   ["outline-offset-2", "oo-2"],

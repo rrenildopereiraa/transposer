@@ -1,5 +1,5 @@
 import { toast } from "sonner";
-import { transposeClasses } from "../util/convertor";
+import { convertUtils } from "../util/convertor";
 import React, { useState } from "react";
 
 function Transposer() {
@@ -13,7 +13,7 @@ function Transposer() {
       return;
     }
 
-    const transposedOut = transposeClasses(inp);
+    const transposedOut = convertUtils(inp);
     setOut(transposedOut);
     toast.success("Your code has been converted!");
     setIsConverted(true);

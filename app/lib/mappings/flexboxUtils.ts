@@ -1,5 +1,5 @@
-export const flexboxClasses = new Map<string, string>([
-  // Flex Basis
+export const flexboxUtils = new Map<string, string>([
+  // flex-basis
   ["basis-0", "fb-0"],
   ["basis-1", "fb-1"],
   ["basis-2", "fb-2"],
@@ -34,32 +34,32 @@ export const flexboxClasses = new Map<string, string>([
   ["basis-full", "fb-full"],
   ["basis-1/2", "fb-half"],
 
-  // Flex Direction
+  // flex-direction
   ["flex-row", "fd-r"],
   ["flex-row-reverse", "fd-rr"],
   ["flex-col", "fd-c"],
   ["flex-col-reverse", "fd-cr"],
 
-  // Flex Wrap
+  // flex-wrap
   ["flex-wrap", "fw-w"],
   ["flex-wrap-reverse", "fw-wr"],
   ["flex-nowrap", "fw-nw"],
 
-  // Flex
+  // flex
   ["flex-1", "f-1"],
   ["flex-auto", "f-auto"],
   ["flex-initial", "f-initial"],
   ["flex-none", "f-none"],
 
-  // Flex Grow
+  // flex-grow
   ["grow", "fg-1"],
   ["grow-0", "fg-0"],
 
-  // Flex Shrink
+  // flex-shrink
   ["shrink", "fs-1"],
   ["shrink-0", "fs-0"],
 
-  // Justify Content
+  // justify-content
   ["justify-normal", "jc-n"],
   ["justify-start", "jc-fs"],
   ["justify-end", "jc-fe"],
@@ -69,20 +69,20 @@ export const flexboxClasses = new Map<string, string>([
   ["justify-evenly", "jc-se"],
   ["justify-stretch", "jc-s"],
 
-  // Justify Items
+  // justify-items
   ["justify-items-start", "ji-s"],
   ["justify-items-end", "ji-e"],
   ["justify-items-center", "ji-c"],
   ["justify-items-stretch", "ji-st"],
 
-  // Justify Self
+  // justify-self
   ["justify-self-auto", "js-auto"],
   ["justify-self-start", "js-s"],
   ["justify-self-end", "js-e"],
   ["justify-self-center", "js-c"],
   ["justify-self-stretch", "js-st"],
 
-  // Align Content
+  // align-content
   ["content-normal", "ac-n"],
   ["content-center", "ac-c"],
   ["content-start", "ac-fs"],
@@ -93,14 +93,14 @@ export const flexboxClasses = new Map<string, string>([
   ["content-baseline", "ac-b"],
   ["content-stretch", "ac-s"],
 
-  // Align Items
+  // align-items
   ["items-start", "ai-fs"],
   ["items-end", "ai-fe"],
   ["items-center", "ai-c"],
   ["items-baseline", "ai-b"],
   ["items-stretch", "ai-s"],
 
-  // Align Self
+  // align-self
   ["self-auto", "as-auto"],
   ["self-start", "as-fs"],
   ["self-end", "as-fe"],

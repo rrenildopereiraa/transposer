@@ -1,5 +1,5 @@
-export const filterClasses = new Map<string, string>([
-  // Blur
+export const filterUtils = new Map<string, string>([
+  // blur
   ["blur-none", "bf-b-none"],
   ["blur-sm", "bf-b-xs"],
   ["blur", "bf-b-sm"],

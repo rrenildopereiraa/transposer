@@ -1,15 +1,15 @@
-import { allClasses } from "../lib/index";
+import { allUtils } from "../lib/index";
 
-export function transposeClasses(inp: string): string {
+export function convertUtils(inp: string): string {
   let out = inp;
 
-  const sortedClasses = allClasses
+  const sortedUtils = allUtils
     .flatMap(({ classes }) => [...classes.entries()])
     .sort(([a], [b]) => b.length - a.length);
 
-  sortedClasses.forEach(([tailwindClass, yummaClass]) => {
-    const regex = new RegExp(`\\b${tailwindClass}(\\d+)?\\b`, "g");
-    out = out.replace(regex, (_, num) => yummaClass + (num || ""));
+  sortedUtils.forEach(([tw, yumma]) => {
+    const regex = new RegExp(`\\b${tw}(\\d+)?\\b`, "g");
+    out = out.replace(regex, (_, num) => yumma + (num || ""));
   });
 
   return out;

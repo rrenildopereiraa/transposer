@@ -1,5 +1,5 @@
-export const interactivityClasses = new Map<string, string>([
-  // Accent Color
+export const interactivityUtils = new Map<string, string>([
+  // accent-color
   ["accent-red-50", "ac-l-red-6"],
   ["accent-red-100", "ac-l-red-5"],
   ["accent-red-200", "ac-l-red-4"],
@@ -132,11 +132,11 @@ export const interactivityClasses = new Map<string, string>([
   ["accent-gray-900", "ac-d-lead-5"],
   ["accent-gray-950", "ac-d-lead-6"],
 
-  // Appearance
+  // appearance
   ["appearance-none", "a-none"],
   ["appearance-auto", "a-auto"],
 
-  // Cursor
+  // cursor
   ["cursor-auto", "c-auto"],
   ["cursor-default", "c-d"],
   ["cursor-pointer", "c-p"],
@@ -163,7 +163,7 @@ export const interactivityClasses = new Map<string, string>([
   ["cursor-zoom-in", "c-zi"],
   ["cursor-zoom-out", "c-zo"],
 
-  // Caret Color
+  // caret-color
   ["caret-red-50", "cc-l-red-6"],
   ["caret-red-100", "cc-l-red-5"],
   ["caret-red-200", "cc-l-red-4"],
@@ -300,17 +300,17 @@ export const interactivityClasses = new Map<string, string>([
   ["caret-transparent", "cc-transparent"],
   ["caret-white", "cc-white"],
 
-  // Pointer Events
+  // pointer-events
   ["pointer-events-none", "pe-none"],
   ["pointer-events-auto", "pe-auto"],
 
-  // Resize
+  // resize
   ["resize-none", "r-none"],
   ["resize-y", "r-v"],
   ["resize-x", "r-h"],
   ["resize", "r-b"],
 
-  // User Select
+  // user-select
   ["select-none", "us-none"],
   ["select-text", "us-t"],
   ["select-all", "us-a"],

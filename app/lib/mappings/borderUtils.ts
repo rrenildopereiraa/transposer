@@ -1,17 +1,17 @@
-export const borderClasses = new Map<string, string>([
-  // Border Radius
+export const borderUtils = new Map<string, string>([
+  // border-radius
   ["rounded-none", "rad-0"],
   ["rounded", "rad-1"],
   ["rounded-lg", "rad-2"],
   ["rounded-xl", "rad-3"],
   ["rounded-2xl", "rad-4"],
 
-  // Border Style
+  // border-style
   ["border-none", "b-none"],
   ["border-dashed", "b-d"],
   ["border-solid", "b-s"],
 
-  // Border Width
+  // border-width
   ["border-0", "b-0"],
   ["border", "b-1"],
   ["border-1", "b-1"],
@@ -23,7 +23,7 @@ export const borderClasses = new Map<string, string>([
   ["border-7", "b-7"],
   ["border-8", "b-8"],
 
-  // Border Bottom Width
+  // border-bottom-width
   ["border-b-0", "bb-0"],
   ["border-b", "bb-1"],
   ["border-b-1", "bb-1"],
@@ -35,7 +35,7 @@ export const borderClasses = new Map<string, string>([
   ["border-b-7", "bb-7"],
   ["border-b-8", "bb-8"],
 
-  // Border Left Width
+  // border-left-width
   ["border-l-0", "bl-0"],
   ["border-l", "bl-1"],
   ["border-l-1", "bl-1"],
@@ -47,7 +47,7 @@ export const borderClasses = new Map<string, string>([
   ["border-l-7", "bl-7"],
   ["border-l-8", "bl-8"],
 
-  // Border Right Width
+  // border-right-width
   ["border-r-0", "br-0"],
   ["border-r", "br-1"],
   ["border-r-1", "br-1"],
@@ -59,7 +59,7 @@ export const borderClasses = new Map<string, string>([
   ["border-r-7", "br-7"],
   ["border-r-8", "br-8"],
 
-  // Border Top Width
+  // border-top-width
   ["border-t-0", "bt-0"],
   ["border-t", "bt-1"],
   ["border-t-1", "bt-1"],
@@ -71,7 +71,7 @@ export const borderClasses = new Map<string, string>([
   ["border-t-7", "bt-7"],
   ["border-t-8", "bt-8"],
 
-  // Border Color
+  // border-color
   ["border-red-50", "bc-l-red-6"],
   ["border-red-100", "bc-l-red-5"],
   ["border-red-200", "bc-l-red-4"],

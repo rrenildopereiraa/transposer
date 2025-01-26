@@ -1,5 +1,5 @@
-export const backgroundClasses = new Map<string, string>([
-  // Background Color
+export const backgroundUtils = new Map<string, string>([
+  // background-color
   ["bg-red-50", "bg-l-red-6"],
   ["bg-red-100", "bg-l-red-5"],
   ["bg-red-200", "bg-l-red-4"],

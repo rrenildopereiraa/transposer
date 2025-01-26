@@ -1,5 +1,5 @@
-export const effectClasses = new Map<string, string>([
-  // Box Shadow
+export const effectUtils = new Map<string, string>([
+  // box-shadow
   ["shadow-none", "bs-none"],
   ["shadow-sm", "bs-xs"],
   ["shadow", "bs-sm"],
@@ -7,7 +7,7 @@ export const effectClasses = new Map<string, string>([
   ["shadow-lg", "bs-lg"],
   ["shadow-xl", "bs-xl"],
 
-  // Opacity
+  // opacity
   ["opacity-0", "o-0"],
   ["opacity-10", "o-10"],
   ["opacity-20", "o-20"],

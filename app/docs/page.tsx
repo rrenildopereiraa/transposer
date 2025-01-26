@@ -1,4 +1,4 @@
-import { allClasses } from "../lib";
+import { allUtils } from "../lib";
 
 export default function Docs() {
   return (
@@ -8,7 +8,7 @@ export default function Docs() {
         See how it works under the hood with our mappings.
       </p>
 
-      {allClasses.map(({ title, classes }, i) => (
+      {allUtils.map(({ title, utils }, i) => (
         <section key={i} className="b-1 bc-d-lead-4 bg-black mt-6 pt-3">
           <h2 className="fs-sm ta-c fw-600 mb-4 tc-white">{title} utilities</h2>
           <div className="ovf-h bt-1 bc-d-lead-4">
@@ -27,15 +27,13 @@ export default function Docs() {
                 </tr>
               </thead>
               <tbody className="bt-1 bc-d-lead-4">
-                {Array.from(classes.entries()).map(
-                  ([tailwindClass, yummaClass], j) => (
-                    <tr key={j}>
-                      <th className="px-6 py-4 fw-500 tc-white">{title}</th>
-                      <td className="px-6 py-4 ff-m">{tailwindClass}</td>
-                      <td className="px-6 py-4 ff-m">{yummaClass}</td>
-                    </tr>
-                  )
-                )}
+                {Array.from(classes.entries()).map(([tw, yumma], j) => (
+                  <tr key={j}>
+                    <th className="px-6 py-4 fw-500 tc-white">{title}</th>
+                    <td className="px-6 py-4 ff-m">{tw}</td>
+                    <td className="px-6 py-4 ff-m">{yumma}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

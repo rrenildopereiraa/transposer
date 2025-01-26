@@ -1,9 +1,9 @@
-export const tableClasses = new Map<string, string>([
-  // Caption Side
+export const tableUtils = new Map<string, string>([
+  // caption-side
   ["caption-top", "cs-t"],
   ["caption-bottom", "cs-b"],
 
-  // Table Layout
+  // table-layout
   ["table-auto", "tl-auto"],
   ["table-fixed", "tl-f"],
 ]);

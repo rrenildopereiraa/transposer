@@ -1,31 +1,31 @@
-import { backgroundClasses } from "./mappings/backgroundMap";
-import { borderClasses } from "./mappings/borderMap";
-import { effectClasses } from "./mappings/effectMap";
-import { filterClasses } from "./mappings/filterMap";
-import { flexboxClasses } from "./mappings/flexboxMap";
-import { gridClasses } from "./mappings/gridMap";
-import { interactivityClasses } from "./mappings/interactivityMap";
-import { layoutClasses } from "./mappings/layoutMap";
-import { outlineClasses } from "./mappings/outlineMap";
-import { sizingClasses } from "./mappings/sizingMap";
-import { spacingClasses } from "./mappings/spacingMap";
-import { tableClasses } from "./mappings/tableMap";
-import { typographyClasses } from "./mappings/typographyMap";
-import { modifierClasses } from "./mappings/modifierMap";
+import { backgroundUtils } from "./mappings/backgroundUtils";
+import { borderUtils } from "./mappings/borderUtils";
+import { effectUtils } from "./mappings/effectUtils";
+import { filterUtils } from "./mappings/filterUtils";
+import { flexboxUtils } from "./mappings/flexboxUtils";
+import { gridUtils } from "./mappings/gridUtils";
+import { interactivityUtils } from "./mappings/interactivityUtils";
+import { layoutUtils } from "./mappings/layoutUtils";
+import { outlineUtils } from "./mappings/outlineUtils";
+import { sizingUtils } from "./mappings/sizingUtils";
+import { spacingUtils } from "./mappings/spacingUtils";
+import { tableUtils } from "./mappings/tableUtils";
+import { typographyUtils } from "./mappings/typographyUtils";
+import { modifierUtils } from "./mappings/modifierUtils";
 
-export const allClasses = [
-  { title: "Background", classes: backgroundClasses },
-  { title: "Border", classes: borderClasses },
-  { title: "Effects", classes: effectClasses },
-  { title: "Filters", classes: filterClasses },
-  { title: "Flexbox", classes: flexboxClasses },
-  { title: "Grid", classes: gridClasses },
-  { title: "Interactivity", classes: interactivityClasses },
-  { title: "Layout", classes: layoutClasses },
-  { title: "Outline", classes: outlineClasses },
-  { title: "Sizing", classes: sizingClasses },
-  { title: "Spacing", classes: spacingClasses },
-  { title: "Tables", classes: tableClasses },
-  { title: "Typography", classes: typographyClasses },
-  { title: "Modifiers", classes: modifierClasses },
+export const allUtils = [
+  { title: "Background", utils: backgroundUtils },
+  { title: "Border", utils: borderUtils },
+  { title: "Effects", utils: effectUtils },
+  { title: "Filters", utils: filterUtils },
+  { title: "Flexbox", utils: flexboxUtils },
+  { title: "Grid", utils: gridUtils },
+  { title: "Interactivity", utils: interactivityUtils },
+  { title: "Layout", utils: layoutUtils },
+  { title: "Outline", utils: outlineUtils },
+  { title: "Sizing", utils: sizingUtils },
+  { title: "Spacing", utils: spacingUtils },
+  { title: "Tables", utils: tableUtils },
+  { title: "Typography", utils: typographyUtils },
+  { title: "Modifiers", utils: modifierUtils },
 ];

@@ -1,5 +1,5 @@
-export const spacingClasses = new Map<string, string>([
-  // Spacing X
+export const spacingUtils = new Map<string, string>([
+  // spacing-x
   ["space-x-0", "s-x-0"],
   ["space-x-1", "s-x-1"],
   ["space-x-2", "s-x-2"],
@@ -31,7 +31,7 @@ export const spacingClasses = new Map<string, string>([
   ["space-x-80", "s-x-80"],
   ["space-x-96", "s-x-96"],
 
-  // Spacing Y
+  // spacing-y
   ["space-y-0", "s-y-0"],
   ["space-y-1", "s-y-1"],
   ["space-y-2", "s-y-2"],

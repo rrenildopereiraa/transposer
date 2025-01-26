@@ -1,5 +1,5 @@
-export const gridClasses = new Map<string, string>([
-  // Grid Template Columns
+export const gridUtils = new Map<string, string>([
+  // grid-template-columns
   ["grid-cols-1", "gtc-1"],
   ["grid-cols-2", "gtc-2"],
   ["grid-cols-3", "gtc-3"],
@@ -13,7 +13,7 @@ export const gridClasses = new Map<string, string>([
   ["grid-cols-11", "gtc-11"],
   ["grid-cols-12", "gtc-12"],
 
-  // Grid Column Start / End
+  // grid-column-start / end
   ["col-span-1", "gc-s-1"],
   ["col-span-2", "gc-s-2"],
   ["col-span-3", "gc-s-3"],
@@ -53,7 +53,7 @@ export const gridClasses = new Map<string, string>([
   ["col-end-12", "gce-12"],
   ["col-end-13", "gce-13"],
 
-  // Grid Template Rows
+  // grid-template-rows
   ["grid-rows-1", "gtr-1"],
   ["grid-rows-2", "gtr-2"],
   ["grid-rows-3", "gtr-3"],
@@ -67,7 +67,7 @@ export const gridClasses = new Map<string, string>([
   ["grid-rows-11", "gtr-11"],
   ["grid-rows-12", "gtr-12"],
 
-  // Grid Row Start / End
+  // grid-row-start / end
   ["row-span-1", "gr-s-1"],
   ["row-span-2", "gr-s-2"],
   ["row-span-3", "gr-s-3"],
@@ -107,24 +107,24 @@ export const gridClasses = new Map<string, string>([
   ["row-end-12", "gre-12"],
   ["row-end-13", "gre-13"],
 
-  // Grid Auto Flow
+  // grid-auto-flow
   ["grid-flow-row", "gaf-r"],
   ["grid-flow-col", "gaf-c"],
   ["grid-flow-dense", "gaf-d"],
   ["grid-flow-row-dense", "gaf-rd"],
   ["grid-flow-col-dense", "gaf-dr"],
 
-  // Grid Auto Columns
+  // grid-auto-columns
   ["auto-cols-auto", "gac-auto"],
   ["auto-cols-min", "gac-min"],
   ["auto-cols-max", "gac-max"],
 
-  // Grid Auto Rows
+  // grid-auto-rows
   ["auto-rows-auto", "gar-auto"],
   ["auto-rows-min", "gar-min"],
   ["auto-rows-max", "gar-max"],
 
-  // Column Gap
+  // column-gap
   ["gap-x-0", "cg-0"],
   ["gap-x-1", "cg-1"],
   ["gap-x-2", "cg-2"],
@@ -141,7 +141,7 @@ export const gridClasses = new Map<string, string>([
   ["gap-x-14", "cg-14"],
   ["gap-x-16", "cg-16"],
 
-  // Gap
+  // gap
   ["gap-0", "g-0"],
   ["gap-1", "g-1"],
   ["gap-2", "g-2"],
@@ -158,7 +158,7 @@ export const gridClasses = new Map<string, string>([
   ["gap-14", "g-14"],
   ["gap-16", "g-16"],
 
-  // Row Gap
+  // row-gap
   ["gap-y-0", "rg-0"],
   ["gap-y-1", "rg-1"],
   ["gap-y-2", "rg-2"],

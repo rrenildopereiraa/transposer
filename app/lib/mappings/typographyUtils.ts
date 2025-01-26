@@ -1,10 +1,10 @@
-export const typographyClasses = new Map<string, string>([
-  // Font Family
+export const typographyUtils = new Map<string, string>([
+  // font-family
   ["font-sans", "ff-s"],
   ["font-serif", "ff-c"],
   ["font-mono", "ff-m"],
 
-  // Font Size
+  // font-size
   ["text-xs", "fs-xs"],
   ["text-base", "fs-b"],
   ["text-2xl", "fs-sm"],
@@ -14,11 +14,11 @@ export const typographyClasses = new Map<string, string>([
   ["text-7xl", "fs-xxl"],
   ["text-8xl", "fs-6xl"],
 
-  // Font Style
+  // font-style
   ["italic", "fs-i"],
   ["not-italic", "fs-n"],
 
-  // Font Weight
+  // font-weight
   ["font-thin", "fw-100"],
   ["font-extralight", "fw-200"],
   ["font-light", "fw-300"],
@@ -29,7 +29,7 @@ export const typographyClasses = new Map<string, string>([
   ["font-extrabold", "fw-800"],
   ["font-black", "fw-900"],
 
-  // Line Height
+  // line-height
   ["leading-6", "lh-4"],
   ["leading-8", "lh-6"],
   ["leading-none", "lh-1"],
@@ -39,10 +39,10 @@ export const typographyClasses = new Map<string, string>([
   ["leading-relaxed", "lh-5"],
   ["leading-loose", "lh-6"],
 
-  // List Style Type
+  // list-style-type
   ["list-disc", "lst-d"],
 
-  // Text Align
+  // text-align
   ["text-left", "ta-l"],
   ["text-center", "ta-c"],
   ["text-right", "ta-r"],
@@ -50,7 +50,7 @@ export const typographyClasses = new Map<string, string>([
   ["text-start", "ta-s"],
   ["text-end", "ta-e"],
 
-  // Text Color
+  // text-color
   ["text-red-50", "tc-l-red-6"],
   ["text-red-100", "tc-l-red-5"],
   ["text-red-200", "tc-l-red-4"],
@@ -187,11 +187,11 @@ export const typographyClasses = new Map<string, string>([
   ["text-transparent", "tc-transparent"],
   ["text-white", "tc-white"],
 
-  // Text Decoration
+  // text-decoration
   ["underline", "td-u"],
   ["no-underline", "td-none"],
 
-  // Text Decoration Color
+  // text-decoration-color
   ["decoration-red-50", "tdc-l-red-6"],
   ["decoration-red-100", "tdc-l-red-5"],
   ["decoration-red-200", "tdc-l-red-4"],
@@ -328,11 +328,11 @@ export const typographyClasses = new Map<string, string>([
   ["decoration-transparent", "tdc-transparent"],
   ["decoration-white", "tdc-white"],
 
-  // Text Decoration Style
+  // text-decoration-style
   ["decoration-solid", "tds-s"],
   ["decoration-dashed", "tds-d"],
 
-  // Text Decoration Thickness
+  // text-decoration-thickness
   ["decoration-auto", "tdt-auto"],
   ["decoration-from-font", "tdt-ff"],
   ["decoration-0", "tdt-0"],
@@ -340,7 +340,7 @@ export const typographyClasses = new Map<string, string>([
   ["decoration-2", "tdt-2"],
   ["decoration-4", "tdt-4"],
 
-  // Word Break
+  // word-break
   ["break-normal", "ow-n"],
   ["break-words", "ow-bw"],
 ]);
