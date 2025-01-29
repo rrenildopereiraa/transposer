@@ -4,7 +4,7 @@ export function convertUtils(inp: string): string {
   let out = inp;
 
   const sortedUtils = allUtils
-    .flatMap(({ classes }) => [...classes.entries()])
+    .flatMap(({ code }) => [...code.entries()])
     .sort(([a], [b]) => b.length - a.length);
 
   sortedUtils.forEach(([tw, yumma]) => {
