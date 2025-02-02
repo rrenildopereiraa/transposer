@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { ArrowDownUp, Book, Search, X } from "lucide-react";
 import { convertToYumma, convertToTailwind } from "./mappings";
 import { categoryDescriptions, groupedConversions } from "./mappings/categories";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [tailwindValue, setTailwindValue] = useState("");
@@ -119,7 +120,7 @@ export default function Home() {
 
       {/* Documentation Modal */}
       {showDocs && (
-        <div className="ai-c bf-b-sm d-f i-0 jc-c p-4 p-f zi-50">
+        <div className="ai-c bf-b-xs d-f i-0 jc-c p-4 p-f zi-50">
           <div className="b-1 bc-silver-2 bg-white bs-xs max-w-168 max-h-80v ovf-h rad-2 w-full">
             <div className="ai-fs bb-1 bc-silver-4 d-f jc-sb p-6">
               <div>
