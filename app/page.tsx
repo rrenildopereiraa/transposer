@@ -64,7 +64,10 @@ export default function Home() {
       <div className="b-1 bc-silver-1 bg-white bs-xs max-w-112 p-8 rad-2 sy-8 w-full">
         <div className="sy-2 ta-c">
           <div className="ai-c d-f g-2 jc-c">
-            <h1 className="fs-xxl fw-400 tc-silver-12">Transposer Beta</h1>
+            <h1 className="fs-3xl fw-400 tc-silver-12">Transposer</h1>
+            <span className="ai-c bg-green-2 cg-1 d-if fs-xs fw-500 px-2 py-1 rad-1 tc-green-6">
+              NEW
+            </span>
           </div>
           <p className="tc-silver-9">
             Simplify your framework migrations right now!
@@ -73,7 +76,7 @@ export default function Home() {
             onClick={() => setShowDocs(true)}
             className="ai-c d-if fs-sm g-2 h:tc-green-8 mt-2 tc-green">
             <Book className="d-4" />
-            Documentation
+            Available Conversions
           </button>
         </div>
 
@@ -105,7 +108,7 @@ export default function Home() {
             <label className="d-b fs-sm fw-600 tc-silver-10">
               {isTailwindToYumma ? "Yumma CSS v2" : "Tailwind CSS v3"}
             </label>
-            <div className="b-1 bc-silver-1 bc-silver-3 px-4 py-3 rad-2 w-full us-t">
+            <div className="b-1 bc-silver-1 bc-silver-3 px-4 py-3 rad-2 w-full">
               <p className="fw-500 ow-bw tc-silver">
                 {currentOutputValue || "Empty"}
               </p>
@@ -120,7 +123,7 @@ export default function Home() {
           <div className="b-1 bc-silver-2 bg-white bs-xs max-w-168 max-h-80v ovf-h rad-2 w-full">
             <div className="ai-fs bb-1 bc-silver-4 d-f jc-sb p-6">
               <div>
-                <h2 className="fs-xxl fw-400 tc-silver-12">Documentation</h2>
+                <h2 className="fs-xxl fw-400 tc-silver-12">Conversions</h2>
                 <p className="mt-1 tc-silver-9">
                   Browse all available class conversions.
                 </p>

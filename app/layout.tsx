@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Transposer",
-  description: "Simplify your framework migrations today!",
+  description: "Simplify your framework migrations right now!",
   icons: {
     icon: "https://transposer.vercel.app/favicon.ico",
     apple: "https://transposer.vercel.app/apple-icon.png",
   },
   openGraph: {
     title: "Transposer",
-    description: "Transposer will convert Tailwind to Yumma CSS.",
+    description: "Simplify your framework migrations right now!",
     siteName: "Transposer",
     locale: "en_US",
     type: "website",
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="d-full bs-c bp-c br-r">
+      <body className="bp-c br-r bs-c d-full">
         <Toaster />
         {children}
       </body>
