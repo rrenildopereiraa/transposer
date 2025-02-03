@@ -31,13 +31,10 @@ export const cssMap = {
 } as const;
 
 // Create reverse mapping
-export const reverseCssMap = Object.entries(cssMap).reduce(
-  (acc, [key, value]) => {
-    acc[value] = key;
-    return acc;
-  },
-  {} as Record<string, string>
-);
+export const reverseCssMap = Object.entries(cssMap).reduce((acc, [key, value]) => {
+  acc[value] = key;
+  return acc;
+}, {} as Record<string, string>);
 
 // Helper functions
 export const convertToYumma = (tailwindClasses: string): string => {
