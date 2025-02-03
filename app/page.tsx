@@ -4,7 +4,6 @@ import { useState, useMemo } from "react";
 import { ArrowDownUp, Book, Search, X } from "lucide-react";
 import { convertToYumma, convertToTailwind } from "./mappings";
 import { categoryDescriptions, groupedConversions } from "./mappings/categories";
-import { motion } from "framer-motion";
 
 export default function Home() {
   const [tailwindValue, setTailwindValue] = useState("");
