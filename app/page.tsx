@@ -101,7 +101,7 @@ export default function Home() {
               placeholder={
                 isTailwindToYumma ? "e.g., justify-items-center" : "e.g., ji-c"
               }
-              className="b-1 bc-silver-4 px-4 py-3 r-v rad-2 w-full"
+              className="b-1 bc-silver-4 fs-b px-4 py-3 r-v rad-2 w-full"
             />
           </div>
 
@@ -138,7 +138,7 @@ export default function Home() {
 
             <div className="bb-1 bc-silver-4 p-6">
               <div className="p-r">
-                <Search className="d-5 l-3 p-a t-full t-y-135p tc-silver-9" />
+                <Search className="d-5 fs-b l-3 p-a t-full t-y-135p tc-silver-9" />
                 <input
                   type="text"
                   placeholder="Search conversions..."
