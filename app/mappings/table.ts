@@ -1,3 +1,5 @@
+// prettier-ignore
+
 export const tableMap = {
   // caption-side
   "caption-top": "cs-t",

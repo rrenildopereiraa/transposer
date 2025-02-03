@@ -1,3 +1,5 @@
+// prettier-ignore
+
 export const sizingMap = {
   // width
   "w-1/2": "w-half",

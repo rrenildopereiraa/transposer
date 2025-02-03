@@ -1,3 +1,5 @@
+// prettier-ignore
+
 export const layoutMap = {
   // aspect-ratio
   "aspect-auto": "ar-auto",
@@ -5,7 +7,7 @@ export const layoutMap = {
   "aspect-video": "ar-l",
 
   // container
-  container: "cnt",
+  "container": "cnt",
 
   // columns
   "columns-1": "cols-1",
@@ -27,17 +29,17 @@ export const layoutMap = {
   "box-content": "bs-cb",
 
   // display
-  block: "d-b",
-  flex: "d-f",
+  "block": "d-b",
+  "flex": "d-f",
   "flow-root": "d-fr",
-  grid: "d-g",
-  hidden: "d-none",
+  "grid": "d-g",
+  "hidden": "d-none",
   "inline-block": "d-ib",
   "inline-flex": "d-if",
   "inline-grid": "d-ig",
   "inline-table": "d-it",
-  inline: "d-i",
-  table: "d-t",
+  "inline": "d-i",
+  "table": "d-t",
 
   // float
   "float-start": "flo-is",
@@ -79,11 +81,11 @@ export const layoutMap = {
   "overflow-y-scroll": "ovf-y-s",
 
   // position
-  static: "p-s",
-  fixed: "p-f",
-  absolute: "p-a",
-  relative: "p-r",
-  sticky: "p-st",
+  "static": "p-s",
+  "fixed": "p-f",
+  "absolute": "p-a",
+  "relative": "p-r",
+  "sticky": "p-st",
 
   // top-right-bottom-left
   "bottom-0": "dir-l-0",

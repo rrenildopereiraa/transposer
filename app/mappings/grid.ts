@@ -1,3 +1,5 @@
+// prettier-ignore
+
 export const gridMap = {
   // grid-template-columns
   "grid-cols-1": "gtc-1",

@@ -1,7 +1,9 @@
+// prettier-ignore
+
 export const borderMap = {
   // border-radius
   "rounded-none": "rad-0",
-  rounded: "rad-1",
+  "rounded": "rad-1",
   "rounded-lg": "rad-2",
   "rounded-xl": "rad-3",
   "rounded-2xl": "rad-4",
@@ -13,7 +15,7 @@ export const borderMap = {
 
   // border-width
   "border-0": "b-0",
-  border: "b-1",
+  "border": "b-1",
   "border-1": "b-1",
   "border-2": "b-2",
   "border-3": "b-3",
