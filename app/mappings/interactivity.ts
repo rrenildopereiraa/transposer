@@ -1,5 +1,3 @@
-// prettier-ignore
-
 export const interactivityMap = {
   // accent-color
   "accent-red-50": "ac-l-red-6",
@@ -310,7 +308,7 @@ export const interactivityMap = {
   "resize-none": "r-none",
   "resize-y": "r-v",
   "resize-x": "r-h",
-  "resize": "r-b",
+  resize: "r-b",
 
   // user-select
   "select-none": "us-none",

@@ -1,5 +1,3 @@
-// prettier-ignore
-
 export const backgroundMap = {
   // background-color
   "bg-red-50": "bg-l-red-6",

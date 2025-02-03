@@ -1,5 +1,3 @@
-// prettier-ignore
-
 export const flexboxMap = {
   // flex-basis
   "basis-0": "fb-0",
@@ -54,11 +52,11 @@ export const flexboxMap = {
   "flex-none": "f-none",
 
   // flex-grow
-  "grow": "fg-1",
+  grow: "fg-1",
   "grow-0": "fg-0",
 
   // flex-shrink
-  "shrink": "fs-1",
+  shrink: "fs-1",
   "shrink-0": "fs-0",
 
   // justify-content

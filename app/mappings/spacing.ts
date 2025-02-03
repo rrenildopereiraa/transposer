@@ -1,5 +1,3 @@
-// prettier-ignore
-
 export const spacingMap = {
   // spacing-x
   "space-x-0": "s-x-0",

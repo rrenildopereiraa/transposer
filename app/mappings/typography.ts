@@ -1,5 +1,3 @@
-// prettier-ignore
-
 export const typographyMap = {
   // font-family
   "font-sans": "ff-s",
@@ -17,7 +15,7 @@ export const typographyMap = {
   "text-8xl": "fs-6xl",
 
   // font-style
-  "italic": "fs-i",
+  italic: "fs-i",
   "not-italic": "fs-n",
 
   // font-weight

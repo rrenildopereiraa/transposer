@@ -1,5 +1,3 @@
-// prettier-ignore
-
 export const outlineMap = {
   // outline-width
   "outline-0": "ow-0",
@@ -146,7 +144,7 @@ export const outlineMap = {
 
   // outline-style
   "outline-none": "os-none",
-  "outline": "os-s",
+  outline: "os-s",
   "outline-dashed": "os-d",
 
   // outline-offset
