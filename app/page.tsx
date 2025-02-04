@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { ArrowDownUp, Book, Search, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { convertToYumma, convertToTailwind } from "./mappings";
 import { categoryDescriptions, groupedConversions } from "./mappings/categories";
 
@@ -12,6 +13,10 @@ export default function Home() {
   const [showDocs, setShowDocs] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [expandedCategories, setExpandedCategories] = useState<string[]>([]);
+
+  useEffect(() => {
+    setShowDocs(false);
+  }, []);
 
   const handleInputChange = (value: string) => {
     if (isTailwindToYumma) {
@@ -118,80 +123,88 @@ export default function Home() {
       </div>
 
       {/* Documentation Modal */}
-      {showDocs && (
-        <div className="ai-c bf-b-xs d-f i-0 jc-c p-4 p-f zi-50">
-          <div className="b-1 bc-silver-2 bg-white bs-xs max-w-168 max-h-80v ovf-h rad-2 w-full">
-            <div className="ai-fs bb-1 bc-silver-4 d-f jc-sb p-6">
-              <div>
-                <h2 className="fs-xxl fw-400 tc-silver-12">Conversions</h2>
-                <p className="mt-1 tc-silver-9">
-                  Browse all available class conversions.
-                </p>
+      <AnimatePresence>
+        {showDocs && (
+          <motion.div
+            className="ai-c bf-b-xs d-f i-0 jc-c p-4 p-f zi-50"
+            initial={{ opacity: 0, scale: 0.75 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}>
+            <div className="b-1 bc-silver-2 bg-white bs-xs max-w-168 max-h-80v ovf-h rad-2 w-full">
+              <div className="ai-fs bb-1 bc-silver-4 d-f jc-sb p-6">
+                <div>
+                  <h2 className="fs-xxl fw-400 tc-silver-12">Conversions</h2>
+                  <p className="mt-1 tc-silver-9">
+                    Browse all available class conversions.
+                  </p>
+                </div>
+                <button
+                  onClick={() => setShowDocs(false)}
+                  className="h:tc-red-7 tc-red-6">
+                  <X className="d-6" />
+                </button>
               </div>
-              <button
-                onClick={() => setShowDocs(false)}
-                className="h:tc-red-7 tc-red-6">
-                <X className="d-6" />
-              </button>
-            </div>
 
-            <div className="bb-1 bc-silver-4 p-6">
-              <div className="p-r">
-                <Search className="d-5 fs-b l-3 p-a t-full t-y-135p tc-silver-9" />
-                <input
-                  type="text"
-                  placeholder="Search conversions..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="b-1 bc-silver-4 pl-10 pr-4 py-2 rad-2 w-full"
-                />
+              <div className="bb-1 bc-silver-4 p-6">
+                <div className="p-r">
+                  <Search className="d-5 fs-b l-3 p-a t-full t-y-135p tc-silver-9" />
+                  <input
+                    type="text"
+                    placeholder="Search conversions..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="b-1 bc-silver-4 pl-10 pr-4 py-2 rad-2 w-full"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div className="max-h-200px ovf-y-auto">
-              <div className="p-6 sy-6">
-                {Object.entries(filteredConversions).map(([category, items]) => (
-                  <div key={category} className="b-1 bc-silver-4 p-4 rad-2 sy-3">
-                    <button
-                      onClick={() => toggleCategory(category)}
-                      className="ai-c d-f jc-sb ta-l w-full">
-                      <h3 className="fw-600 h:tc-green-7 tc-green sy-3">
-                        {category}
-                      </h3>
-                      <span className="fs-sm tc-silver-9">
-                        {items.length} conversions
-                      </span>
-                    </button>
+              <div className="max-h-200px ovf-y-auto">
+                <div className="p-6 sy-6">
+                  {Object.entries(filteredConversions).map(([category, items]) => (
+                    <div key={category} className="b-1 bc-silver-4 p-4 rad-2 sy-3">
+                      <button
+                        onClick={() => toggleCategory(category)}
+                        className="ai-c d-f jc-sb ta-l w-full">
+                        <h3 className="fw-600 h:tc-green-7 tc-green sy-3">
+                          {category}
+                        </h3>
+                        <span className="fs-sm tc-silver-9">
+                          {items.length} conversions
+                        </span>
+                      </button>
 
-                    {categoryDescriptions[category] && (
-                      <p className="fs-sm mx-2 tc-silver-8">
-                        {categoryDescriptions[category]}
-                      </p>
-                    )}
+                      {categoryDescriptions[category] && (
+                        <p className="fs-sm mx-2 tc-silver-8">
+                          {categoryDescriptions[category]}
+                        </p>
+                      )}
 
-                    {expandedCategories.includes(category) && (
-                      <div className="mx-3 sx-3">
-                        <div className="d-g fs-sm g-4 gtc-2">
-                          <div className="fw-600 tc-silver-10">Tailwind CSS v3</div>
-                          <div className="fw-600 tc-silver-10">Yumma CSS v2</div>
-                        </div>
-                        {items.map((item, index) => (
-                          <div
-                            key={index}
-                            className="d-g fs-sm g-4 gtc-2 h:bc-silver-1 py-2 rad-2">
-                            <div className="tc-silver-9">{item.tailwind}</div>
-                            <div className="tc-silver-9">{item.yumma}</div>
+                      {expandedCategories.includes(category) && (
+                        <div className="mx-3 sx-3">
+                          <div className="d-g fs-sm g-4 gtc-2">
+                            <div className="fw-600 tc-silver-10">
+                              Tailwind CSS v3
+                            </div>
+                            <div className="fw-600 tc-silver-10">Yumma CSS v2</div>
                           </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))}
+                          {items.map((item, index) => (
+                            <div
+                              key={index}
+                              className="d-g fs-sm g-4 gtc-2 h:bc-silver-1 py-2 rad-2">
+                              <div className="tc-silver-9">{item.tailwind}</div>
+                              <div className="tc-silver-9">{item.yumma}</div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
