@@ -66,7 +66,7 @@ export default function Home() {
           <div className="ai-c d-f g-2 jc-c">
             <h1 className="fs-3xl fw-400 tc-silver-12">Transposer</h1>
             <span className="ai-c bg-green-2 cg-1 d-if fs-xs fw-500 px-2 py-1 rad-1 tc-green-6">
-              NEW
+              Beta
             </span>
           </div>
           <p className="tc-silver-9">
