@@ -9,7 +9,7 @@ import { categoryDescriptions, groupedConversions } from "./mappings/categories"
 export default function Home() {
   const [tailwindValue, setTailwindValue] = useState("");
   const [yummaValue, setYummaValue] = useState("");
-  const [isTailwindToYumma, setIsTailwindToYumma] = useState(true);
+  const [isDirection, setIsDirection] = useState(true);
   const [showDocs, setShowDocs] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [expandedCategories, setExpandedCategories] = useState<string[]>([]);
@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   const handleInputChange = (value: string) => {
-    if (isTailwindToYumma) {
+    if (isDirection) {
       setTailwindValue(value);
       setYummaValue(convertToYumma(value));
     } else {
@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   const toggleMode = () => {
-    setIsTailwindToYumma(!isTailwindToYumma);
+    setIsDirection(!isDirection);
   };
 
   const toggleCategory = (category: string) => {
@@ -40,8 +40,8 @@ export default function Home() {
     );
   };
 
-  const currentInputValue = isTailwindToYumma ? tailwindValue : yummaValue;
-  const currentOutputValue = isTailwindToYumma ? yummaValue : tailwindValue;
+  const currentInputValue = isDirection ? tailwindValue : yummaValue;
+  const currentOutputValue = isDirection ? yummaValue : tailwindValue;
 
   const filteredConversions = useMemo(() => {
     if (!searchQuery) return groupedConversions;
@@ -89,7 +89,7 @@ export default function Home() {
           <div className="sy-2">
             <div className="ai-c d-f jc-sb">
               <label className="d-b fs-sm fw-600 tc-silver-10">
-                {isTailwindToYumma ? "Tailwind CSS v3" : "Yumma CSS v2"}
+                {isDirection ? "Tailwind CSS v3" : "Yumma CSS v2"}
               </label>
               <button
                 onClick={toggleMode}
@@ -103,7 +103,7 @@ export default function Home() {
               value={currentInputValue}
               onChange={(e) => handleInputChange(e.target.value)}
               placeholder={
-                isTailwindToYumma ? "e.g., justify-items-center" : "e.g., ji-c"
+                isDirection ? "e.g., justify-items-center" : "e.g., ji-c"
               }
               className="b-1 bc-silver-4 fs-b px-4 py-3 r-v rad-2 w-full"
             />
@@ -111,7 +111,7 @@ export default function Home() {
 
           <div className="sy-2">
             <label className="d-b fs-sm fw-600 tc-silver-10">
-              {isTailwindToYumma ? "Yumma CSS v2" : "Tailwind CSS v3"}
+              {isDirection ? "Yumma CSS v2" : "Tailwind CSS v3"}
             </label>
             <div className="b-1 bc-silver-1 bc-silver-3 px-4 py-3 rad-2 w-full">
               <p className="fw-500 ow-bw tc-silver">
