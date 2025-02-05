@@ -1,208 +1,81 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
-import { ArrowDownUp, Book, Search, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { convertToYumma, convertToTailwind } from "./mappings";
+import { AnimatePresence } from "framer-motion";
 import { categoryDescriptions, groupedConversions } from "./mappings/categories";
+import { convertToYumma, convertToTailwind } from "./mappings";
+import { useState, useMemo } from "react";
+import ConverterPanel from "./components/ConverterPanel";
+import DocumentationModal from "./components/DocumentationModal";
+import Header from "./components/Header";
 
 export default function Home() {
-  const [tailwindValue, setTailwindValue] = useState("");
-  const [yummaValue, setYummaValue] = useState("");
-  const [isDirection, setIsDirection] = useState(true);
-  const [showDocs, setShowDocs] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [expandedCategories, setExpandedCategories] = useState<string[]>([]);
+  const [twValue, setTwValue] = useState("");
+  const [ymaValue, setYmaValue] = useState("");
+  const [isTwToYma, setIsTwToYma] = useState(true);
+  const [isDocsOpen, setIsDocsOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const [expandedCats, setExpandedCats] = useState<string[]>([]);
 
-  useEffect(() => {
-    setShowDocs(false);
-  }, []);
-
-  const handleInputChange = (value: string) => {
-    if (isDirection) {
-      setTailwindValue(value);
-      setYummaValue(convertToYumma(value));
+  const onInputChange = (value: string) => {
+    if (isTwToYma) {
+      setTwValue(value);
+      setYmaValue(convertToYumma(value));
     } else {
-      setYummaValue(value);
-      setTailwindValue(convertToTailwind(value));
+      setYmaValue(value);
+      setTwValue(convertToTailwind(value));
     }
   };
 
-  const toggleMode = () => {
-    setIsDirection(!isDirection);
-  };
-
-  const toggleCategory = (category: string) => {
-    setExpandedCategories((prev) =>
-      prev.includes(category)
-        ? prev.filter((c) => c !== category)
-        : [...prev, category]
+  const switchMode = () => setIsTwToYma(!isTwToYma);
+  const toggleCat = (cat: string) => {
+    setExpandedCats((prev) =>
+      prev.includes(cat) ? prev.filter((c) => c !== cat) : [...prev, cat]
     );
   };
 
-  const currentInputValue = isDirection ? tailwindValue : yummaValue;
-  const currentOutputValue = isDirection ? yummaValue : tailwindValue;
+  const filtered = useMemo(() => {
+    if (!query) return groupedConversions;
+    const q = query.toLowerCase();
+    const result: typeof groupedConversions = {};
 
-  const filteredConversions = useMemo(() => {
-    if (!searchQuery) return groupedConversions;
-
-    const query = searchQuery.toLowerCase();
-    const filtered: typeof groupedConversions = {};
-
-    Object.entries(groupedConversions).forEach(([category, items]) => {
-      const matchingItems = items.filter(
+    Object.entries(groupedConversions).forEach(([cat, items]) => {
+      const matches = items.filter(
         (item) =>
-          item.tailwind.toLowerCase().includes(query) ||
-          item.yumma.toLowerCase().includes(query)
+          item.tailwind.toLowerCase().includes(q) ||
+          item.yumma.toLowerCase().includes(q)
       );
-
-      if (matchingItems.length > 0) {
-        filtered[category] = matchingItems;
-      }
+      if (matches.length) result[cat] = matches;
     });
 
-    return filtered;
-  }, [searchQuery]);
+    return result;
+  }, [query]);
 
   return (
     <div className="ai-c d-f jc-c min-h-1/1 p-6">
       <div className="b-1 bc-silver-1 bg-white bs-xs max-w-112 p-8 rad-2 sy-8 w-full">
-        <div className="sy-2 ta-c">
-          <div className="ai-c d-f g-2 jc-c">
-            <h1 className="fs-3xl fw-400 tc-silver-12">Transposer</h1>
-            <span className="ai-c bg-green-2 cg-1 d-if fs-xs fw-500 px-2 py-1 rad-1 tc-green-6">
-              Beta
-            </span>
-          </div>
-          <p className="tc-silver-9">
-            Simplify your framework migrations right now!
-          </p>
-          <button
-            onClick={() => setShowDocs(true)}
-            className="ai-c d-if fs-sm g-2 h:tc-green-8 mt-2 tc-green">
-            <Book className="d-4" />
-            Available Conversions
-          </button>
-        </div>
+        <Header onShowDocs={() => setIsDocsOpen(true)} />
 
-        <div className="sy-6">
-          <div className="sy-2">
-            <div className="ai-c d-f jc-sb">
-              <label className="d-b fs-sm fw-600 tc-silver-10">
-                {isDirection ? "Tailwind CSS v3" : "Yumma CSS v2"}
-              </label>
-              <button
-                onClick={toggleMode}
-                className="ai-c d-f fs-sm g-1 h:tc-green-8 tc-green">
-                <ArrowDownUp className="d-4" />
-                Switch Mode
-              </button>
-            </div>
-            <textarea
-              rows={6}
-              value={currentInputValue}
-              onChange={(e) => handleInputChange(e.target.value)}
-              placeholder={
-                isDirection ? "e.g., justify-items-center" : "e.g., ji-c"
-              }
-              className="b-1 bc-silver-4 fs-b px-4 py-3 r-v rad-2 w-full"
-            />
-          </div>
-
-          <div className="sy-2">
-            <label className="d-b fs-sm fw-600 tc-silver-10">
-              {isDirection ? "Yumma CSS v2" : "Tailwind CSS v3"}
-            </label>
-            <div className="b-1 bc-silver-1 bc-silver-3 px-4 py-3 rad-2 w-full">
-              <p className="fw-500 ow-bw tc-silver">
-                {currentOutputValue || "Empty"}
-              </p>
-            </div>
-          </div>
-        </div>
+        <ConverterPanel
+          isTwToYma={isTwToYma}
+          onSwitch={switchMode}
+          currentInput={isTwToYma ? twValue : ymaValue}
+          currentOutput={isTwToYma ? ymaValue : twValue}
+          onInputChange={onInputChange}
+        />
       </div>
 
-      {/* Documentation Modal */}
       <AnimatePresence>
-        {showDocs && (
-          <motion.div
-            className="ai-c bf-b-xs d-f i-0 jc-c p-4 p-f zi-50"
-            initial={{ opacity: 0, scale: 0.75 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}>
-            <div className="b-1 bc-silver-2 bg-white bs-xs max-w-168 max-h-80v ovf-h rad-2 w-full">
-              <div className="ai-fs bb-1 bc-silver-4 d-f jc-sb p-6">
-                <div>
-                  <h2 className="fs-xxl fw-400 tc-silver-12">Conversions</h2>
-                  <p className="mt-1 tc-silver-9">
-                    Browse all available class conversions.
-                  </p>
-                </div>
-                <button
-                  onClick={() => setShowDocs(false)}
-                  className="h:tc-red-7 tc-red-6">
-                  <X className="d-6" />
-                </button>
-              </div>
-
-              <div className="bb-1 bc-silver-4 p-6">
-                <div className="p-r">
-                  <Search className="d-5 fs-b l-3 p-a t-full t-y-135p tc-silver-9" />
-                  <input
-                    type="text"
-                    placeholder="Search conversions..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="b-1 bc-silver-4 pl-10 pr-4 py-2 rad-2 w-full"
-                  />
-                </div>
-              </div>
-
-              <div className="max-h-200px ovf-y-auto">
-                <div className="p-6 sy-6">
-                  {Object.entries(filteredConversions).map(([category, items]) => (
-                    <div key={category} className="b-1 bc-silver-4 p-4 rad-2 sy-3">
-                      <button
-                        onClick={() => toggleCategory(category)}
-                        className="ai-c d-f jc-sb ta-l w-full">
-                        <h3 className="fw-600 h:tc-green-7 tc-green sy-3">
-                          {category}
-                        </h3>
-                        <span className="fs-sm tc-silver-9">
-                          {items.length} conversions
-                        </span>
-                      </button>
-
-                      {categoryDescriptions[category] && (
-                        <p className="fs-sm mx-2 tc-silver-8">
-                          {categoryDescriptions[category]}
-                        </p>
-                      )}
-
-                      {expandedCategories.includes(category) && (
-                        <div className="mx-3 sx-3">
-                          <div className="d-g fs-sm g-4 gtc-2">
-                            <div className="fw-600 tc-silver-10">
-                              Tailwind CSS v3
-                            </div>
-                            <div className="fw-600 tc-silver-10">Yumma CSS v2</div>
-                          </div>
-                          {items.map((item, index) => (
-                            <div
-                              key={index}
-                              className="d-g fs-sm g-4 gtc-2 h:bc-silver-1 py-2 rad-2">
-                              <div className="tc-silver-9">{item.tailwind}</div>
-                              <div className="tc-silver-9">{item.yumma}</div>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
+        {isDocsOpen && (
+          <DocumentationModal
+            isOpen={isDocsOpen}
+            onClose={() => setIsDocsOpen(false)}
+            query={query}
+            onSearch={setQuery}
+            conversions={filtered}
+            expandedCats={expandedCats}
+            onToggleCat={toggleCat}
+            descriptions={categoryDescriptions}
+          />
         )}
       </AnimatePresence>
     </div>
