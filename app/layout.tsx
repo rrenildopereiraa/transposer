@@ -1,10 +1,12 @@
 import "./globals.css";
 import { Toaster } from "sonner";
+import Footer from "./components/footer";
+import Nav from "./components/nav";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Transposer",
-  description: "Simplify your framework migrations right now!",
+  description: "Build Tailwind output Yumma.",
   icons: {
     icon: "https://transposer.vercel.app/favicon.ico",
     apple: "https://transposer.vercel.app/apple-icon.png",
@@ -30,9 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bp-c br-r bs-c d-full">
-        <Toaster />
+      <body className="bg-black">
+        <Nav />
         {children}
+        <Toaster />
+        <Footer />
       </body>
     </html>
   );

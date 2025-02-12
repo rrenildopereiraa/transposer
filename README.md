@@ -1,14 +1,18 @@
 <div align="center">
   <a href="https://transposer.vercel.app/" target="_blank" rel="noopener noreferrer">
-    <img alt="Transposer" src="https://transposer.vercel.app/apple-touch-icon.png" width="80" style="max-width: 100%; border-radius: 0.25rem">
+    <img alt="Transposer" src="https://transposer.vercel.app/assets/icon.png" width="80" style="max-width: 100%;">
   </a>
   <h3>Transposer</h3>
 </div>
 
 <p align="center">
-  Simplify your framework migrations right now!
+  Build Tailwind output Yumma.
   <br>
   <a href="https://transposer.vercel.app/"><strong>Launch application ↗</strong></a>
+
+## Get started
+
+The Transposer application will facilitate the conversion of Tailwind to Yumma CSS.
 
 ## Installation
 
