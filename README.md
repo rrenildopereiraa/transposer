@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  Build Tailwind output Yumma.
+  Simplify your framework migrations right now!
   <br>
   <a href="https://transposer.vercel.app/"><strong>Launch application ↗</strong></a>
 

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Transposer",
-  description: "Build Tailwind output Yumma.",
+  description: "Simplify your framework migrations right now!",
   icons: {
     icon: "https://transposer.vercel.app/favicon.ico",
     apple: "https://transposer.vercel.app/apple-icon.png",
