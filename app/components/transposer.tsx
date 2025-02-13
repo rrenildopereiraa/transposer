@@ -35,25 +35,25 @@ function Transposer() {
 
   return (
     <div>
-      <div className="fd-c g-6 ai-c d-f jc-c mt-12 md:fd-r">
+      <div className="ai-c d-f fd-c g-6 jc-c md:fd-r mt-12">
         <textarea
-          className="b-1 bc-d-lead-4 bg-d-lead-6 c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
+          className="c-d b-1 bc-d-lead-4 bg-d-lead-6 h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder={isReverse ? "Write Yumma" : "Write Tailwind"}
           value={inp}
           spellCheck={false}
           onChange={handleInputChange}></textarea>
         <textarea
-          className="b-1 bc-d-lead-4 bg-d-lead-6 c-d h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
+          className="c-d b-1 bc-d-lead-4 bg-d-lead-6 h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder="..."
           value={out}
           spellCheck={false}
           readOnly></textarea>
       </div>
       <div className="ai-c d-f jc-c s-x-2">
-        <button className="b-1 bc-d-lead-4 bg-d-lead-6 tc-silver px-5 py-2 my-4 rad-1 s-x-6" onClick={toggleDirection}>
+        <button className="b-1 bc-d-lead-4 bg-d-lead-6 my-4 px-5 py-2 rad-1 s-x-6 tc-silver" onClick={toggleDirection}>
           Switch to {isReverse ? "Yumma" : "Tailwind"}
         </button>
-        <button className="b-1 bc-d-lead-4 bg-d-lead-6 tc-silver px-5 py-2 my-4 rad-1 s-x-6" onClick={handleCopy}>
+        <button className="b-1 bc-d-lead-4 bg-d-lead-6 my-4 px-5 py-2 rad-1 s-x-6 tc-silver" onClick={handleCopy}>
           Copy
         </button>
       </div>
