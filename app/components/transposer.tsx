@@ -35,7 +35,15 @@ function Transposer() {
 
   return (
     <div>
-      <div className="ai-c d-f fd-c g-4 jc-c md:fd-r mt-12">
+      <div className="d-f jc-fs s-x-2 mt-14">
+        <button className="b-1 bc-d-lead-3 bg-d-lead-6 p-2 rad-1" onClick={toggleDirection}>
+          {isReverse ? <ArrowRightLeft className="dim-4 tc-white" /> : <ArrowLeftRight className="dim-4 tc-white" />}
+        </button>
+        <button className="b-1 bc-d-lead-3 bg-d-lead-6 p-2 rad-1" onClick={handleCopy}>
+          <Copy className="dim-4 tc-white" />
+        </button>
+      </div>
+      <div className="ai-c d-f fd-c g-4 jc-c md:fd-r mt-4">
         <textarea
           className="c-d b-1 bc-d-lead-4 bg-d-lead-6 h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder={isReverse ? "Write Yumma" : "Write Tailwind"}
@@ -48,14 +56,6 @@ function Transposer() {
           value={out}
           spellCheck={false}
           readOnly></textarea>
-      </div>
-      <div className="d-f jc-fe s-x-2 mt-4">
-        <button className="b-1 bc-d-lead-4 bg-d-lead-6 p-2 rad-2" onClick={toggleDirection}>
-          {isReverse ? <ArrowRightLeft className="dim-4 tc-white" /> : <ArrowLeftRight className="dim-4 tc-white" />}
-        </button>
-        <button className="b-1 bc-d-lead-4 bg-d-lead-6 p-2 rad-2" onClick={handleCopy}>
-          <Copy className="dim-4 tc-white" />
-        </button>
       </div>
     </div>
   );
