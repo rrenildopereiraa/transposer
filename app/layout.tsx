@@ -30,9 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black">
-        {children}
-        <Toaster position="top-center" />
+      <body className="bg-gradient m-3">
+        <div className="bg-black rad-2">
+          {children}
+          <Toaster position="top-center" />
+        </div>
       </body>
     </html>
   );

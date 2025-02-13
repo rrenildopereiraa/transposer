@@ -1,11 +1,8 @@
 @import "yummacss/dist/yumma.min.css";
 @import "@fontsource-variable/plus-jakarta-sans";
 
-body {
-  background-color: #000000;
-  background-image: radial-gradient(#26262f 0.65px, #000000 0.65px);
-  background-size: 13px 13px;
-  opacity: 0.9;
+.bg-gradient {
+  background: linear-gradient(225deg, #595cd9, #353782);
 }
 
 * {

@@ -34,7 +34,7 @@ function Transposer() {
   };
 
   return (
-    <div>
+    <div className="h-1/1">
       <div className="d-f jc-fs s-x-2 mt-14">
         <button className="b-1 bc-d-lead-3 bg-d-lead-6 p-2 rad-1" onClick={toggleDirection}>
           {isReverse ? <ArrowRightLeft className="dim-4 tc-white" /> : <ArrowLeftRight className="dim-4 tc-white" />}
