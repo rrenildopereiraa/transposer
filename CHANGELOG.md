@@ -17,7 +17,7 @@ All notable changes to the Transposer will be documented in this file.
 
 ---
 
-<details open>
+<details>
 
 <summary>
     <b>Fixes</b>
