@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { toast } from "sonner";
 import { convertUtils } from "../util/convertor";
+import { ArrowLeftRight, ArrowRightLeft, Copy } from "lucide-react";
 
 function Transposer() {
   const [inp, setInp] = useState("");
@@ -15,27 +16,26 @@ function Transposer() {
   };
 
   const toggleDirection = () => {
-    setIsReverse((prev) => {
-      const newDirection = !prev;
-      setOut(convertUtils(inp, newDirection));
-      return newDirection;
-    });
+    const newDirection = !isReverse;
+    setIsReverse(newDirection);
+    setOut(convertUtils(inp, newDirection));
+    toast.success(`Output set to ${newDirection ? "Tailwind" : "Yumma"}`);
   };
 
   const handleCopy = () => {
     navigator.clipboard
       .writeText(out)
       .then(() => {
-        toast.success("Your code has been copied!");
+        toast.success("Copied to clipboard!");
       })
       .catch(() => {
-        toast.error("Copy failed. Please try again.");
+        toast.error("Something went wrong...");
       });
   };
 
   return (
     <div>
-      <div className="ai-c d-f fd-c g-6 jc-c md:fd-r mt-12">
+      <div className="ai-c d-f fd-c g-4 jc-c md:fd-r mt-12">
         <textarea
           className="c-d b-1 bc-d-lead-4 bg-d-lead-6 h-100 pl-4 pt-3 r-none rad-1 tc-white w-full"
           placeholder={isReverse ? "Write Yumma" : "Write Tailwind"}
@@ -49,12 +49,12 @@ function Transposer() {
           spellCheck={false}
           readOnly></textarea>
       </div>
-      <div className="ai-c d-f jc-c s-x-2">
-        <button className="b-1 bc-d-lead-4 bg-d-lead-6 my-4 px-5 py-2 rad-1 s-x-6 tc-silver" onClick={toggleDirection}>
-          Switch to {isReverse ? "Yumma" : "Tailwind"}
+      <div className="d-f jc-fe s-x-2 mt-4">
+        <button className="b-1 bc-d-lead-4 bg-d-lead-6 p-2 rad-2" onClick={toggleDirection}>
+          {isReverse ? <ArrowRightLeft className="dim-4 tc-white" /> : <ArrowLeftRight className="dim-4 tc-white" />}
         </button>
-        <button className="b-1 bc-d-lead-4 bg-d-lead-6 my-4 px-5 py-2 rad-1 s-x-6 tc-silver" onClick={handleCopy}>
-          Copy
+        <button className="b-1 bc-d-lead-4 bg-d-lead-6 p-2 rad-2" onClick={handleCopy}>
+          <Copy className="dim-4 tc-white" />
         </button>
       </div>
     </div>
